@@ -5,9 +5,11 @@ bigimg: /img/gearshift.jpeg
 tags: [musings]
 ---
 
-Should I learn vi?
+Should I learn to master vi/vim?
 
-Nobody's ever tried to convince me to! But I wonder if it might bring the same joy I get from ReSharper.
+Nobody's ever tried particularly hard to convince me to - but I know people who really enjoy using it.
+
+I recently started thinking about why people still choose manual gearboxes when buying a car. I'm one of them, so I should be able to answer that.
 
 Why do so many people (myself included) still choose manual gearboxes when buying a car? It used to be that they were cheaper and more fuel efficient, but I’m not sure that was ever the real reason. Advances in technology have basically eliminated any real difference there, so why do people still buy them? Do they just like making life a bit more difficult?
 
