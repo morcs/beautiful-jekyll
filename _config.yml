@@ -120,7 +120,7 @@ google_analytics: "UA-115459185-1"
 
 # --- Misc --- #
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-#disqus: ""
+disqus: "morcs-com"
 
 # Facebook App ID
 # fb_app_id: ""
