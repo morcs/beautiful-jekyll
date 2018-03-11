@@ -2,6 +2,7 @@
 layout: post
 title: Why functional programming?
 tags: [functional-programming]
+bigimg: /img/why-fp.gif
 ---
 
 As a recent convert, I've already been asked several times to explain what’s so great about functional programming. It’s something I find surprisingly difficult to answer.
