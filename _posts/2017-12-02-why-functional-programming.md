@@ -23,7 +23,7 @@ Maybe this pushes the developer ego to the conclusion that it was everyone else�
 
 This phenomenon seems to have been reciprocating for years now, leading to this wonderful quote from Douglas Crockford
 
-> The curse of the monad is that once you get the epiphany, once you understand ‘oh that’s what it is’, you lose the ability > to explain it to anybody else.
+> The curse of the monad is that once you get the epiphany, once you understand ‘oh that’s what it is’, you lose the ability to explain it to anybody else.
 
 So of course, despite knowing all of this, I’m going to blunder onto the internet and try to explain monads.
 
