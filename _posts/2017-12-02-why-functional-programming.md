@@ -13,21 +13,23 @@ Apparently it’s not just me:
 
 Neil’s definitely not stupid. I’ve learned about subjects such as CQRS and event sourcing from attending his talks and I know he’ll have spoken to plenty of people that you’d think should be able to answer this question. Maybe it is genuinely hard to answer. Or maybe it’s not actually better at all?
 
-It’s something to do with “monads”
+## It’s something to do with “monads”
 There seems to be this rite of passage for any developer making the shift from object-oriented to functional programming which involves trying to explain to the world what monads are. Often the motivation given is something along the lines of “the best way to learn is to teach”. I think there’s also a bit of this:
 
-Monads have a reputation for being difficult to understand.
-Once they finally “click”, monads don’t seem difficult to understand.
+1. Monads have a reputation for being difficult to understand.
+2. Once they finally “click”, monads don’t seem difficult to understand.
+
 Maybe this pushes the developer ego to the conclusion that it was everyone else’s fault it took them so long to understand what monads were. Everyone else was just over-complicating it.
 
 This phenomenon seems to have been reciprocating for years now, leading to this wonderful quote from Douglas Crockford
 
-The curse of the monad is that once you get the epiphany, once you understand ‘oh that’s what it is’, you lose the ability to explain it to anybody else.
+> The curse of the monad is that once you get the epiphany, once you understand ‘oh that’s what it is’, you lose the ability > to explain it to anybody else.
+
 So of course, despite knowing all of this, I’m going to blunder onto the internet and try to explain monads.
 
 More specifically I’m going to try to explain monads by trying to answer the question “Why functional programming?”.
 
-You probably already love functional programming
+## You probably already love functional programming
 Of course in reality a lot of this functional stuff has already made its way into object-oriented languages. For example, C# has higher-order functions, and I can’t think of a much better example of the delights afforded by higher-order functions than .NET’s LINQ extension methods.
 
 I dare say you’ll struggle to find a developer that uses LINQ that doesn’t love it!
@@ -51,9 +53,11 @@ Here if no companies match, the Where clause will return an empty collection, ra
 
 Now that I’m learning functional programming concepts, I can see that what I was doing here is actually an example of using monads.
 
-So what’s special about "functional languages"?
+## So what’s special about "functional languages"?
 I actually think this Tweet answers the "Why functional programming?" question pretty well:
 
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Imagine programming without fear that functions return null, throw exceptions, or return different outputs for the same input.<br><br>Imagine being able to describe what functions do by inspecting their types, without having to study implementations.<br><br>This is why we love FP. ❤️</p>&mdash; John Ⓐ De Goes (@jdegoes) <a href="https://twitter.com/jdegoes/status/932999912488235010?ref_src=twsrc%5Etfw">November 21, 2017</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 In the C# example above, functional techniques were used to avoid exceptions, but the point is, we could write code that threw exceptions.
 
