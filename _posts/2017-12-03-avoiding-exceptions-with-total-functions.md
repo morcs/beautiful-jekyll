@@ -33,7 +33,7 @@ In reality, `Single` *sometimes* returns a Customer. If the input causes no matc
 
 ## Total Functions?
 
-![Total Functions](/img/total-functions-2.png)
+![Total Functions](/img/total-functions-2.jpeg)
 
 Maybe (pun-intended) we can avoid this trap by using something that does return a value for every possible input, thus making it a [total function](https://en.wikipedia.org/wiki/Partial_function#Total_function) (a “function”, to give its proper mathematical name 😜)
 
@@ -57,7 +57,7 @@ So again, the developer, not the compiler, must remember this and account for it
 
 ## Total Functions (Honestly this time)
 
-![Total Functions](/img/total-functions-3.png)
+![Total Functions](/img/total-functions-3.jpeg)
 
 The signature for `Where` looks like:
 
