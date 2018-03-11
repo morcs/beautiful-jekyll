@@ -3,8 +3,9 @@ layout: page
 title: About me
 bigimg:
   - "/img/barcelona-wall.jpg" : "Montjuic, Barcelona (2016)"
-  - "/img/london-robot.jpg" : "Science Museum, London (2013)"
   - "/img/langkawi-boat.jpg" : "Langkawi, Malaysia (2016)"
+  - "/img/yosemite.jpg" : "Yosemite Valley, California (2014)"
+  - "/img/snowdon.jpg" : "Snowdon, Wales (2015)"
 ---
 
 As a web developer with 17 years of professional experience, I've delivered bespoke web and mobile applications for customers ranging from startups to blue chip companies (e.g. Volkswagen Group, Dyson, Porsche, Inmarsat), both as an individual and leading a team of developers.
