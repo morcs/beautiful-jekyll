@@ -38,6 +38,11 @@ LINQ can be used to show that one of the benefits of functional programming is i
 
 C# developers will know straight away the most likely source of errors in the following snippet:
 
+```C#
+decimal totalSalary = companies.Single(x => x.ID == companyID)
+                               .Employees
+                               .Sum(x => x.Salary);
+```
 
 There are lots of ways that this code could fail, but I think the most obvious/likely one is when companyID doesn’t match any companies.
 
