@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Avoiding Exceptions with Total Functions
+title: Using total functions to avoid exceptions
 tags: [functional-programming]
 bigimg: /img/total-functions-1.jpeg
 ---
@@ -11,7 +11,7 @@ I gave an example of using functional techniques in C# to do this, without reall
 
 To go further I think it’s worth going a bit deeper into what avoiding exceptions and nulls really means, in functional programming terms.
 
-## Partial Functions
+## Partial functions
 
 I used this snippet of C# code to talk about a problem:
 
@@ -31,7 +31,7 @@ public static Customer Single(...)
 
 In reality, `Single` *sometimes* returns a Customer. If the input causes no match, it throws an exception. In the strict language of mathematics it’s a [partial function](https://en.wikipedia.org/wiki/Partial_function), it doesn’t return a value for every possible input. We’re expected to try and remember that each time we use it. Wouldn’t it be better to get the compiler to pick that up instead?
 
-## Total Functions?
+## Total functions?
 
 ![Total Functions](/img/total-functions-2.jpeg)
 
@@ -55,7 +55,7 @@ We’ll get the dreaded [null reference exception](https://msdn.microsoft.com/en
 
 So again, the developer, not the compiler, must remember this and account for it:
 
-## Total Functions (Honestly this time)
+## Total functions (honestly this time)
 
 ![Total Functions](/img/total-functions-3.jpeg)
 
