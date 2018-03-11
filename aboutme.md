@@ -4,7 +4,6 @@ title: About me
 bigimg:
   - "/img/barcelona-wall.jpg" : "Montjuic, Barcelona (2016)"
   - "/img/langkawi-boat.jpg" : "Langkawi, Malaysia (2016)"
-  - "/img/yosemite.jpg" : "Yosemite Valley, California (2014)"
   - "/img/snowdon.jpg" : "Snowdon, Wales (2015)"
 ---
 
