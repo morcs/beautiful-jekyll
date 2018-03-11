@@ -4,7 +4,7 @@ title: About me
 bigimg:
   - "/img/pump-rooms.jpg" : "Royal Pump Rooms, Leamington Spa"
 ---
-
+ 
 As a web developer with 17 years of professional experience, I've delivered bespoke web and mobile applications for customers ranging from startups to blue chip companies (e.g. Volkswagen Group, Dyson, Porsche, Inmarsat), both as an individual and leading a team of developers.
 
 I like to work closely with highly-engaged users and product owners. I strongly believe that successful software is built incrementally, by delivering changes and responding to feedback in frequent iterations. I've found that appropriate use of practices such as domain-driven design, test-driven development and continuous delivery can be very valuable in facilitating this. 
