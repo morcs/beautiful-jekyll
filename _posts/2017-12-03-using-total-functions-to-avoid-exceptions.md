@@ -5,7 +5,7 @@ tags: [functional-programming]
 bigimg: /img/total-functions-1.jpeg
 ---
 
-In the [previous post](2017-12-02-why-functional-programming/) I picked out what I think is one of the most compelling answers to the question “Why Functional Programming?”. That is, in order to avoid dealing with exceptions and nulls.
+In the [previous post](2017-12-02-why-functional-programming/) I picked out what I think is one of the most compelling answers to the question “Why functional programming?”. That is, in order to avoid dealing with exceptions and nulls.
 
 I gave an example of using functional techniques in C# to do this, without really explaining what makes it functional programming.
 
