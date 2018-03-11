@@ -14,14 +14,15 @@ Apparently it’s not just me:
 Neil’s definitely not stupid. I’ve learned about subjects such as CQRS and event sourcing from attending his talks and I know he’ll have spoken to plenty of people that you’d think should be able to answer this question. Maybe it is genuinely hard to answer. Or maybe it’s not actually better at all?
 
 ## It’s something to do with “monads”
-There seems to be this rite of passage for any developer making the shift from object-oriented to functional programming which involves trying to explain to the world what monads are. Often the motivation given is something along the lines of “the best way to learn is to teach”. I think there’s also a bit of this:
+
+There seems to be this rite of passage for any developer making the shift from object-oriented to functional programming which involves trying to explain to the world what monads are. Often the motivation given is something along the lines of “[the best way to learn is to teach](https://en.wikipedia.org/wiki/Docendo_discimus)”. I think there’s also a bit of this:
 
 1. Monads have a reputation for being difficult to understand.
 2. Once they finally “click”, monads don’t seem difficult to understand.
 
-Maybe this pushes the developer ego to the conclusion that it was everyone else’s fault it took them so long to understand what monads were. Everyone else was just over-complicating it.
+Maybe this pushes the developer ego to the conclusion that it was *everyone else’s* fault it took them so long to understand what monads were. *Everyone else* was just over-complicating it.
 
-This phenomenon seems to have been reciprocating for years now, leading to this wonderful quote from Douglas Crockford
+This phenomenon seems to have been reciprocating for years now, leading to this [wonderful quote from Douglas Crockford](https://www.youtube.com/watch?v=dkZFtimgAcM)
 
 > The curse of the monad is that once you get the epiphany, once you understand ‘oh that’s what it is’, you lose the ability to explain it to anybody else.
 
@@ -30,7 +31,8 @@ So of course, despite knowing all of this, I’m going to blunder onto the inter
 More specifically I’m going to try to explain monads by trying to answer the question “Why functional programming?”.
 
 ## You probably already love functional programming
-Of course in reality a lot of this functional stuff has already made its way into object-oriented languages. For example, C# has higher-order functions, and I can’t think of a much better example of the delights afforded by higher-order functions than .NET’s LINQ extension methods.
+
+Of course in reality a lot of this functional stuff has already made its way into object-oriented languages. For example, C# has [higher-order functions](https://en.wikipedia.org/wiki/Higher-order_function), and I can’t think of a much better example of the delights afforded by higher-order functions than .NET’s (LINQ)[https://en.wikipedia.org/wiki/Language_Integrated_Query] extension methods.
 
 I dare say you’ll struggle to find a developer that uses LINQ that doesn’t love it!
 
@@ -44,21 +46,35 @@ decimal totalSalary = companies.Single(x => x.ID == companyID)
                                .Sum(x => x.Salary);
 ```
 
-There are lots of ways that this code could fail, but I think the most obvious/likely one is when companyID doesn’t match any companies.
+There are lots of ways that this code could fail, but I think the most obvious/likely one is when `companyID` doesn’t match any `companies`.
 
-Assuming in this case it makes sense for totalSalary to be zero when no companies match. We can cover the exception by using SingleOrDefault (which returns null if there’s no match), then check that it didn’t return null before trying to enumerate its employees:
+Assuming in this case it makes sense for `totalSalary` to be zero when no companies match. We can cover the exception by using `SingleOrDefault` (which returns null if there’s no match), then check that it didn’t return null before trying to enumerate its employees:
 
+```C#
+var company = companies.SingleOrDefault(x => x.ID == companyID);
+
+decimal totalSalary = (company == null)
+                      ? 0
+                      : totalSalary = company.Employees
+                                             .Sum(x => x.Salary);
+```
 
 This is painful though, and no sane developer is going to write checking code like this every time a function could fail. There’d be more error checking than actual code. There must be a neater way.
 
 I’ve come across this issue countless times doing C# programming. At some point I noticed that if I ignored the fact that I expected exactly one company to match, I could just leave the result as a collection and avoid the need for a null check:
 
+```C#
+decimal totalSalary = companies.Where(x => x.ID == companyID)
+                               .SelectMany(x => x.Employees)
+                               .Sum(x => x.Salary);
+```
 
-Here if no companies match, the Where clause will return an empty collection, rather than the null we had to guard for above. The rest of the code will work just fine with an empty collection, logically returning zero as its sum.
+Here if no companies match, the `Where` clause will return an empty collection, rather than the null we had to guard for above. The rest of the code will work just fine with an empty collection, logically returning zero as its sum.
 
 Now that I’m learning functional programming concepts, I can see that what I was doing here is actually an example of using monads.
 
 ## So what’s special about "functional languages"?
+
 I actually think this Tweet answers the "Why functional programming?" question pretty well:
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Imagine programming without fear that functions return null, throw exceptions, or return different outputs for the same input.<br><br>Imagine being able to describe what functions do by inspecting their types, without having to study implementations.<br><br>This is why we love FP. ❤️</p>&mdash; John Ⓐ De Goes (@jdegoes) <a href="https://twitter.com/jdegoes/status/932999912488235010?ref_src=twsrc%5Etfw">November 21, 2017</a></blockquote>
