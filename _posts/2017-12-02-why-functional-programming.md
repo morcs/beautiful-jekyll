@@ -33,7 +33,7 @@ More specifically I’m going to try to explain monads by trying to answer the q
 
 ## You probably already love functional programming
 
-Of course in reality a lot of this functional stuff has already made its way into object-oriented languages. For example, C# has [higher-order functions](https://en.wikipedia.org/wiki/Higher-order_function), and I can’t think of a much better example of the delights afforded by higher-order functions than .NET’s (LINQ)[https://en.wikipedia.org/wiki/Language_Integrated_Query] extension methods.
+Of course in reality a lot of this functional stuff has already made its way into object-oriented languages. For example, C# has [higher-order functions](https://en.wikipedia.org/wiki/Higher-order_function), and I can’t think of a much better example of the delights afforded by higher-order functions than .NET’s [LINQ](https://en.wikipedia.org/wiki/Language_Integrated_Query) extension methods.
 
 I dare say you’ll struggle to find a developer that uses LINQ that doesn’t love it!
 
