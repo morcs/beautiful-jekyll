@@ -18,7 +18,7 @@ I used this snippet of C# code to talk about a problem:
 
 The problem is the Single method. Its signature here essentially boils down to:
 
-```
+```C#
 public static Customer Single(...)
 ```
 
@@ -35,7 +35,7 @@ I’ll choose to ignore that the companies collection could be null here, its ju
 Well SingleOrDefault seems to do the trick. With SingleOrDefault every input should return an output, which will either be a Customer or null.
 
 So what’s different about the signature of SingleOrDefault?
-```
+```C#
 public static Customer Single(...)
 public static Customer SingleOrDefault(...)
 ```
@@ -52,7 +52,7 @@ So again, the developer, not the compiler, must remember this and account for it
 ## Total Functions (Honestly this time)
 
 The signature for Where looks like:
-```
+```C#
 public static IEnumerable<Customer> Where(...)
 ```
 
