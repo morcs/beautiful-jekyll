@@ -1,6 +1,6 @@
 ---
 layout: post
 title: Introduction to Elm
-bigimg: /img/gearshift.jpeg
+bigimg: /img/elm-logo.png
 tags: []
 ---
