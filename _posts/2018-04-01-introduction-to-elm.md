@@ -2,6 +2,7 @@
 layout: post
 title: Introduction to Elm
 bigimg: /img/elm-logo.png
+hidden: true
 tags: []
 ---
 
