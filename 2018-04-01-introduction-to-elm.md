@@ -12,13 +12,15 @@ tags: [ functional-programming ]
 
 Elm is a programming language designed specifically for creating browser-based applications. In that sense, it's a bit like JavaScript. In most other ways though - it's nothing like JavaScript. 
 
-Elm is a pure functional language (more on that later), with a syntax very similar to other ML-inspired languages such as Haskell and F#. Don't let that scare you off though, Elm is deliberately designed to be easy to understand. At the same time, almost everything you learn from Elm can help you to break into those more "hardcore" functional languages. 
+Elm is a pure functional language (more on that later), with a syntax very similar languages such as Haskell and F#. Don't let that scare you off though, Elm is deliberately designed to be easy to understand. 
 
-As a traditional "object-oriented" developer - I've found that once you know some Elm, those languages start to look a lot more familiar.
+At the same time, almost everything you learn from Elm can help you to break into those more "hardcore" functional languages. As a traditional "object-oriented" developer - I've found that once you know some Elm, those languages start to look a lot more familiar.
 
 ### Elm is a front-end framework
 
-Elm also comes with a runtime, which provides everything you need to build a browser application, such as dynamically rendering HTML and receiving events from users. In that respect it's a lot like Angular, Vue and especially React. To me though it makes those frameworks look very complicated indeed. All you need to do is come up with a `model` to store the data, an `update` function that decides how to change the model when a user changes something, and a `view` function to decide what HTML to render based on that model. That's it!
+Elm also comes with a runtime, which provides everything you need to build a browser application, such as dynamically rendering HTML and receiving events from users. In that respect it's a lot like Angular, Vue and especially React. 
+
+I've found though that after a while of looking at Elm, those other frameworks start to look very complicated indeed!
 
 ## Why should you use it?
 
