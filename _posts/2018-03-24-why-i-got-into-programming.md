@@ -26,6 +26,6 @@ Thanks to the naivety of youth, I remained hopeful that I'd be able to find game
 
 ## I'll make my own games then
 
-I think this is why, as a stubborn and determined 8 year-old, I ended up opening the BASIC programming manual that came with the Spectrum and began teaching myself to program.
+I think this is why, as a stubborn and determined 8 year-old, I ended up opening the BASIC programming manual that came with the Spectrum and began teaching myself to program. If nobody else would make games for it, I'd have to make my own!
 
 I sometimes wonder what would have happened if I hadn't had ended up with the computer that couldn't play games that nobody else had heard of. Would I still have gone on to a career in the exciting new world of software development right at the moment it was taking off? I'm not so sure. I guess, looking back, should be thankful to that humble little computer.
