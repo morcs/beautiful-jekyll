@@ -16,13 +16,20 @@ One way it's not like JavaScript is that it's not constantly trying to trick you
 
 ### Elm is a front-end framework
 
-Elm could 
+Elm 
+
+## Why should you use it?
+
+I think the main 
+
+* No `null` or `undefined`
+* No `this` keyword
+* It's really fast
 
 - why
 - functions
 
-```
-let add = (x, y) => x + y;
+```javascript
 let add = (x, y) => x + y;
 ```
 
