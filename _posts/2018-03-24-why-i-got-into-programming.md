@@ -11,7 +11,7 @@ My Dad bought it for himself originally, in what must have been the early-mid 80
 
 What made the Spectrum affordable to us and many other families, was that it had no built-in disk drive and didn't come with a monitor/screen. Instead it was designed to be plugged into a home tape recorder (for loading/saving data to cassette tapes) and a standard television. In those days that meant _the_ television - the one in the lounge, so it was never a permanent setup. 
 
-I guess my Dad must've got fed up with me constantly pestering him to set it up for me, as I managed to end up with it being permanently set up in my bedroom, plugged into an old black & white television that must've been handed down by my grandparents.
+I guess my Dad must've got fed up with me constantly pestering him to set it up for me, as I managed to end up having it permanently set up in my bedroom, plugged into an old black & white television that I'd been donated from somewhere.
 
 ## The computer that couldn't play games
 
