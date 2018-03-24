@@ -21,7 +21,7 @@ Elm could
 - why
 - functions
 
-```
+```elm
 > add x y = x + y
 <function> : number -> number -> number
 > addTwo = add 2
