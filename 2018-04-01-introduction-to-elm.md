@@ -8,7 +8,7 @@ tags: [ functional-programming ]
 
 ## What is Elm?
 
-Elm is primarily a programming language, but it also comes with some very nice tools for building web applications.
+Elm is primarily a programming language, but it also comes with some very nice tools for building web applications, meaning it can be used essentially as a front-end web framework.
 
 ### Elm is a programming language
 
