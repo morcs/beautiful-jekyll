@@ -21,13 +21,13 @@ Elm could
 - why
 - functions
 
+```javascript
+let add = (x, y) => x + y
+```
+
 ```elm
-> add x y = x + y
-<function> : number -> number -> number
-> addTwo = add 2
-<function> : number -> number
-> addTwo 3
-5 : number
+add : number -> number -> number
+add x y = x + y
 ```
 
 - types
