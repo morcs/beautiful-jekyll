@@ -35,13 +35,14 @@ Elm is a true statically typed language. The compiler will catch many errors for
 
 ## Functions in Elm
 
-Elm is a pure functional language. That means that all functions in Elm are "pure" functions. But what is a pure function?
+Elm is a pure functional language. That means that all functions in Elm are "pure" functions. 
 
-A pure function is a function which:
-* Given the same input, will always return the same output.
-* Produces no side effects.
+But what is a pure function?
 
+* A pure function, given the same input, will always return the same output
+* A pure function produces no side effects.
 
+These rules have some profound consequences.
 
 ```javascript
 let add = (x, y) => x + y;
