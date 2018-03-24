@@ -48,7 +48,7 @@ For example, I could create a pure function that takes an integer and adds 2 to 
 
 In Elm this looks like:
 
-```
+```elm
 addTwo x = x + 2
 ```
 
