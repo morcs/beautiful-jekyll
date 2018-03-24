@@ -22,12 +22,13 @@ Elm
 
 I think the main argument for using Elm is that it's much easier to write bug-free web applications than it is with any other method I'm aware of.
 
-### There is no `null` or `undefined` in Elm
+> There is no `null` or `undefined` in Elm
 
 Most bugs in JavaScript 
 
-### There is no `this` keyword in Elm
-* It's really fast
+> There is no `this` keyword in Elm
+
+> It's really fast
 
 - why
 - functions
