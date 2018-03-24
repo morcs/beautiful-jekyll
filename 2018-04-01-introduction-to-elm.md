@@ -10,13 +10,13 @@ tags: [ functional-programming ]
 
 ### Elm is a programming language
 
-Elm is a programming language designed specifically for creating browser-based applications. In that sense, it's a bit like JavaScript. In many other ways though - it's nothing like JavaScript. 
+Elm is a programming language designed specifically for creating browser-based applications. In that sense, it's a bit like JavaScript. In most other ways though - it's nothing like JavaScript. 
 
-One way it's not like JavaScript is that it's not constantly trying to trick you into creating bugs.
+Elm is a pure functional language (more on that later), with a syntax very similar to other ML-inspired languages such as Haskell and F#. Don't let that scare you off though, Elm is deliberately designed to be easy to understand. In fact, almost everything you learn from Elm can help you to break into those more "hardcore" functional languages.
 
 ### Elm is a front-end framework
 
-Elm also comes with a runtime, which can deal with all of the things you need to do to build a browser application, such as dynamically rendering HTML and receiving events from users. In that respect it's a bit like Angular, Vue and especially React.
+Elm also comes with a runtime, which provides everything you need to build a browser application, such as dynamically rendering HTML and receiving events from users. In that respect it's a bit like Angular, Vue and especially React.
 
 ## Why should you use it?
 
