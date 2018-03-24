@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Why I got into programming
-hidden: true
 bigimg: 
   - "/img/spectrum.jpeg" : "Sinclair ZX Spectrum 16K"
 ---
