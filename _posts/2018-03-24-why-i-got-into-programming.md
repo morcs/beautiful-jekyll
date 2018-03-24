@@ -20,6 +20,6 @@ Of course, the real reason I got hooked was because I wanted to play games. This
 
 At the time, the shops were full of games for the 3 main competing systems. The Commodore 64, the Amstrad CPC 64 and the Spectrum. The problem was, as I began to discover, all of the Spectrum format games needed you to at least have the 48K model. Almost nobody made games supporting the 16K version that I had.
 
-![Crazy Cars](/img/crazy-cars.jpeg)
+![Crazy Cars](/img/crazy-cars.jpg)
 
 I was a very persistent and hopeful child and I remember regularly looking through all of the games in Boots in town, trying to find one that supported the 16K model. Sometimes I'd get my Mum to ask the shop assistant, usually they'd never even heard of a 16K model. Occasionally I'd find a game that didn't explicitly exclude the 16K Spectrum. I'd get my Mum to buy it, and spend the whole car journey home excitedly looking at the screenshots on the back of the cover, only to find out that inevitably it wouldn't work.
