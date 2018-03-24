@@ -18,7 +18,7 @@ As a traditional "object-oriented" developer - I've found that once you know som
 
 ### Elm is a front-end framework
 
-Elm also comes with a runtime, which provides everything you need to build a browser application, such as dynamically rendering HTML and receiving events from users. In that respect it's a bit like Angular, Vue and especially React.
+Elm also comes with a runtime, which provides everything you need to build a browser application, such as dynamically rendering HTML and receiving events from users. In that respect it's a lot like Angular, Vue and especially React. To me though it makes those frameworks look very complicated indeed. All you need to do is come up with a `model` to store the data, an `update` function that decides how to change the model when a user changes something, and a `view` function to decide what HTML to render based on that model. That's it!
 
 ## Why should you use it?
 
