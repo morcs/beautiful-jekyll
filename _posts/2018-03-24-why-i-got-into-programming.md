@@ -14,8 +14,7 @@ What made the Spectrum affordable to us and many other families, was that it had
 
 I guess my Dad must've got fed up with me constantly pestering him to set it up for me, as I managed to end up with it being permanently set up in my bedroom, plugged into an old black & white television that must've been handed down by my grandparents.
 
-## It has no games
-
+## The computer that couldn't play games
 Of course, the real reason I got hooked was because I wanted to play games. This was where things started to get pretty disappointing.
 
 At the time, the shops were full of games for the 3 main competing systems. The Commodore 64, the Amstrad CPC 64 and the Spectrum. The problem was, as I began to discover, all of the Spectrum format games needed you to at least have the 48K model. Almost nobody made games supporting the 16K version that I had.
@@ -28,4 +27,4 @@ Thanks to the naivety of youth, I remained hopeful that I'd be able to find game
 
 I think this is why, as a stubborn and determined 8 year-old, I ended up opening the BASIC programming manual that came with the Spectrum and began teaching myself to program. If nobody else would make games for it, I'd have to make my own!
 
-I sometimes wonder what would have happened if I hadn't had ended up with the computer that couldn't play games. Would I still have gone on to a career in the exciting new world of software development, right at the moment in history that it was taking off? I'm not so sure. I guess, looking back, should be thankful to that humble little computer.
+I sometimes wonder what would have happened if I hadn't had ended up with that computer. Would I still have gone on to a career in the exciting new world of software development, right at the moment in history that it was really taking off? I'm not so sure. I guess, looking back, should be thankful to that humble little computer that couldn't play games.
