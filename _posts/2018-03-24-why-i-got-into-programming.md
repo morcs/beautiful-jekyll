@@ -6,7 +6,7 @@ bigimg:
   - "/img/spectrum.jpeg" : "Sinclair ZX Spectrum 16K"
 ---
 
-The photo above is of my actual first computer - the [Sinclair ZX Spectrum](https://en.wikipedia.org/wiki/ZX_Spectrum). I don't have the power supply for it any more so I don't know if it still works, but I remember the "Q", "W" and "E" keys stopped working at some point. That didn't stop me using it!
+The photo above is of my actual first computer - the [Sinclair ZX Spectrum](https://en.wikipedia.org/wiki/ZX_Spectrum). I don't have the power supply for it any more so I don't know if it still works, but I remember the "Q", "W" and "E" keys stopped working at some point (though that didn't stop me using it!).
 
 My Dad bought it for himself originally, in what must have been the early-mid 80s. I think he'd seen the huge potential of computers, and wanted to teach himself some programming. I must've been about 6 or 7 years old when he first showed it to me it. My memory is pretty vague, but I know I was completely hooked. 
 
