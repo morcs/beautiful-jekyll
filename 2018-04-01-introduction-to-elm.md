@@ -35,6 +35,17 @@ Elm is a true statically typed language. The compiler will catch many errors for
 
 ## Functions in Elm
 
+I think a lot of what scares people away from functional languages is the syntax for defining and calling functions looks so unfamiliar and terse compared to other languages like C and JavaScript. That said, if you're familiar with more modern JavaScript, hopefully this code will make sense:
+
+```javascript
+let addTwo = x => x + 2;
+```
+You can actually write something very similar in Elm (and in Haskell and F#):
+
+```elm
+addTwo = \x -> x + 2
+```
+
 Elm is a pure functional language. That means that all functions in Elm are "pure" functions. 
 
 But what is a pure function?
