@@ -20,18 +20,20 @@ Elm also comes with a runtime, which can deal with all of the things you need to
 
 ## Why should you use it?
 
-I think the main argument for using Elm is that it's much easier to write bug-free web applications than it is with any other method I'm aware of.
+For me, the main reason for using Elm is that it's so easy to write solid, bug-free code.
 
-> There is no `null` or `undefined` in Elm
+If you're used to writing front-end code in JavaScript (or a related language like TypeScript), I think the following list is compelling:
 
-Most bugs in JavaScript 
+* There is no `null` or `undefined` in Elm
+* There is no `this` keyword in Elm
+* There are no exceptions (and no need for `try` and `catch`) in Elm
+* Elm is statically typed
 
-> There is no `this` keyword in Elm
+If you think about the sort of bugs you usually get in front-end apps, once you take into account the above list - most of them disappear!
 
 > It's really fast
 
-Elm is a true statically typed language. The compiler will catch many errors for you
-
+Another good reason to learn Elm is if you're interested in learning functional programming. Even if you never end up using it, the syntax is essentially identical to Haskell and F#
 
 ## Functions in Elm
 
