@@ -27,8 +27,7 @@ let add = (x, y) => x + y
 
 ```elm
 add : number -> number -> number
-add x y = 
-  x + y
+add x y = x + y
 ```
 
 - types
