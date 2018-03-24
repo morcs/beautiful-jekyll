@@ -1,10 +1,12 @@
 ---
 layout: post
 title: Introduction to Elm
-bigimg: /img/elm-logo.png
+bigimg: /img/elm-leaf.png
 hidden: true
 tags: []
 ---
+
+## What is Elm?
 
 - what
 - why
