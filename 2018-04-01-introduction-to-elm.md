@@ -16,7 +16,7 @@ One way it's not like JavaScript is that it's not constantly trying to trick you
 
 ### Elm is a front-end framework
 
-Elm 
+Elm also comes with a runtime, which can deal with all of the things you need to do to build a browser application, such as dynamically rendering HTML and receiving events from users. In that respect it's a bit like Angular, Vue and especially React.
 
 ## Why should you use it?
 
