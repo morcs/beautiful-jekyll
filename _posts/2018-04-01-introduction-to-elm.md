@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Introduction to Elm
-bigimg: /img/elm-leaf.png
+bigimg: /img/elm-leaf.jpg
 hidden: true
-tags: []
+tags: [ functional-programming ]
 ---
 
 ## What is Elm?
