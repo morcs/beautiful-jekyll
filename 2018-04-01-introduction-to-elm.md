@@ -28,14 +28,12 @@ I've found though that after a while of looking at Elm, those other frameworks s
 
 For me, the main reason for using Elm is that it's so easy to write solid, bug-free code.
 
-If you're used to writing front-end code in JavaScript (or a related language like TypeScript), I think the following list is compelling:
+If you're used to writing front-end code in JavaScript (or a related language like TypeScript), how's this for a list of compelling reasons to prefer Elm:
 
 * There is no `null` or `undefined` in Elm
 * There is no `this` keyword in Elm
 * There are no exceptions (and no need for `try` and `catch`) in Elm
 * Elm is statically typed
-
-If you think about the sort of bugs you usually get in front-end apps, once you take into account the above list - most of them disappear!
 
 > It's really fast
 
