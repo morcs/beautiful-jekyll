@@ -20,6 +20,16 @@ Elm could
 
 - why
 - functions
+
+```
+> add x y = x + y
+<function> : number -> number -> number
+> addTwo = add 2
+<function> : number -> number
+> addTwo 3
+5 : number
+```
+
 - types
 
 - more about union types
