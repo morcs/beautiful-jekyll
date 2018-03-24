@@ -21,7 +21,7 @@ Elm could
 - why
 - functions
 
-```javascript
+```js
 let add = (x, y) => x + y
 ```
 
