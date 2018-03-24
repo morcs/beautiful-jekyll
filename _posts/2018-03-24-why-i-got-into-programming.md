@@ -22,4 +22,10 @@ At the time, the shops were full of games for the 3 main competing systems. The 
 
 ![Crazy Cars](/img/crazy-cars.jpg)
 
-I was a very persistent and hopeful child and I remember regularly looking through all of the games in Boots in town, trying to find one that supported the 16K model. Sometimes I'd get my Mum to ask the shop assistant, usually they'd never even heard of a 16K model. Occasionally I'd find a game that didn't explicitly exclude the 16K Spectrum. I'd get my Mum to buy it, and I'd spend the whole car journey home excitedly looking at the screenshots on the back of the cover, only to find out that inevitably it didn't work.
+Thanks to the naivety of youth, I remained hopeful that I'd be able to find games to play. I remember regularly looking through all of the cassette cases in Boots in town, trying to find one that supported the 16K model. Sometimes I'd get my Mum to ask the shop assistant, usually they'd never even heard of a 16K model. Occasionally I'd find a game that didn't explicitly exclude the 16K. I'd get my Mum to buy it, and I'd spend the whole car journey home excitedly looking at the screenshots on the back of the box, only to find out that, inevitably, it didn't work.
+
+## I'll make my own games then
+
+I think this is why, as a stubborn and determined 8 year-old, I ended up opening the BASIC programming manual that came with the Spectrum and began teaching myself to program.
+
+I sometimes wonder what would have happened if I hadn't had ended up with the computer that couldn't play games that nobody else had heard of. Would I still have gone on to a career in the exciting new world of software development right at the moment it was taking off? I'm not so sure. I guess, looking back, should be thankful to that humble little computer.
