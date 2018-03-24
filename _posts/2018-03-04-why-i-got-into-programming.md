@@ -1,7 +1,8 @@
 ---
+layout: post
 title: Why I got into programming
-visible: false
-bigImg: /img/spectrum.jpeg
+hidden: true
+bigimg: /img/spectrum.jpeg
 ---
 
 Spectrum 16K
