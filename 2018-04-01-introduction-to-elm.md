@@ -30,8 +30,18 @@ Most bugs in JavaScript
 
 > It's really fast
 
-- why
-- functions
+Elm is a true statically typed language. The compiler will catch many errors for you
+
+
+## Functions in Elm
+
+Elm is a pure functional language. That means that all functions in Elm are "pure" functions. But what is a pure function?
+
+A pure function is a function which:
+* Given the same input, will always return the same output.
+* Produces no side effects.
+
+
 
 ```javascript
 let add = (x, y) => x + y;
