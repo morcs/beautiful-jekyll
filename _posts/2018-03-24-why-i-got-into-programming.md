@@ -22,7 +22,7 @@ At the time, the shops were full of games for the 3 main competing systems. The 
 
 ![Crazy Cars](/img/crazy-cars.jpg)
 
-Thanks to the naivety of youth, I remained hopeful that I'd be able to find games to play. I remember regularly looking through all of the cassette cases in Boots in town, trying to find one that supported the 16K model. Sometimes I'd get my Mum to ask the shop assistant, usually they'd never even heard of a 16K model. Occasionally I'd find a game that didn't explicitly exclude the 16K. I'd get my Mum to buy it, and I'd spend the whole car journey home excitedly looking at the screenshots on the back of the box, only to find out that, inevitably, it didn't work.
+Thanks to the naivety of youth, I remained hopeful that I'd be able to find games to play. I remember regularly looking through all of the cassette cases in Boots in town, trying to find one that supported the 16K model. Sometimes I'd get my Mum to ask the shop assistant, usually they'd never even heard of a 16K model. Occasionally I'd find a game that didn't explicitly exclude the 16K. I'd save up and get my Mum to buy it with my pocket money, and I'd spend the whole car journey home excitedly looking at the screenshots on the back of the box, only to find out that, inevitably, it didn't work.
 
 ## I'll make my own games then
 
