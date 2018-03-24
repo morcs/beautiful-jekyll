@@ -9,3 +9,5 @@ bigimg:
 Spectrum 16K
 
 I couldn't play any games.
+
+https://farm4.static.flickr.com/3762/10494593714_296e568505_b.jpg
