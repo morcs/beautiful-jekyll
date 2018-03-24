@@ -8,7 +8,12 @@ tags: [ functional-programming ]
 
 ## What is Elm?
 
-- what
+### Elm is a programming language
+
+Elm is a programming language designed specifically for creating browser-based applications. In that sense, it's a bit like JavaScript. In many ways though it's nothing like JavaScript. This is primarily because it's a pure, functional programming language.
+
+### Elm is a front-end framework
+
 - why
 - functions
 - types
