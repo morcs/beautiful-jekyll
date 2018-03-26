@@ -115,3 +115,6 @@ add x y =
 - subscriptions?
 
 [Try to implement the Reset button](https://ellie-app.com/b3DHf8863a1/0)
+
+[Maybe/Result example](https://ellie-app.com/b3vJ4YBkFa1/0)
+
