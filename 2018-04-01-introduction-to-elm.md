@@ -118,3 +118,5 @@ add x y =
 
 [Maybe/Result example](https://ellie-app.com/b3vJ4YBkFa1/0)
 
+[Starter](https://ellie-app.com/s7vPbXKXca1/1)
+
