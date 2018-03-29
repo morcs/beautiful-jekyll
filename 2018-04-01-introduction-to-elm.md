@@ -120,3 +120,70 @@ add x y =
 
 [Starter](https://ellie-app.com/s7vPbXKXca1/1)
 
+```
+module Main exposing (main)
+
+import Html exposing (..)
+import Html.Attributes exposing (..)
+import Html.Events exposing (..)
+
+
+catGifUrl =
+    "https://media3.giphy.com/media/nyDuytA5bRdbW/giphy.gif"
+
+
+main =
+    Html.beginnerProgram { model = model, update = update, view = view }
+
+
+type Msg
+    = Increment
+    | Decrement
+    | Change String
+
+
+model : Int
+model =
+    0
+
+
+update msg model =
+    case msg of
+        Decrement ->
+            model - 1
+
+        Increment ->
+            model + 1
+
+        Change value ->
+            case value of
+                "" ->
+                    0
+
+                value ->
+                    case String.toInt value of
+                        Ok newNumber ->
+                            newNumber
+
+                        Err _ ->
+                            model
+
+
+view : Int -> Html Msg
+view model =
+    div []
+        [ div []
+            [ button [ onClick Decrement ] [ text "-" ]
+            , input [ type_ "text", value (toString model), onInput Change ] []
+            , button [ onClick Increment ] [ text "+" ]
+            ]
+        , renderCats model |> div []
+        ]
+
+
+renderCats amount =
+    List.range 1 amount
+        |> List.map (\_ -> img [ src catGifUrl ] [])
+```
+https://ellie-app.com/mGr6RPpjda1/0
+
