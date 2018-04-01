@@ -145,18 +145,6 @@ addTwo x = x + 2
 
 ### More parameters
 
-| Input | Output |
-| ----- | ------ |
-| ...   | ...    |
-| -1    | `\y -> -1 + y` |
-| 0     | `\y -> 0 + y` |
-| 1     | `\y -> 1 + y` |
-| 2     | `\y -> 2 + y` |
-| 3     | `\y -> 3 + y` |
-| ...   | ...    |
-
-
-
 ```javascript
 let add = (x, y) => x + y;
 ```
