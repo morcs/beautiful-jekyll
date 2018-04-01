@@ -57,7 +57,7 @@ Elm is a pure functional language. That means that all functions in Elm are "pur
 But what is a pure function?
 
 <table>
-  <caption>Add function</caption>
+  <caption>AND function</caption>
   <thead>
     <tr>
       <th>Input</th>
@@ -66,12 +66,7 @@ But what is a pure function?
   </thead>
   <tbody>
     <tr>
-      <td colspan="2">
-        ...
-      </td>
-    </tr>
-    <tr>
-      <td>1</td>
+      <td>False</td>
       <td>
         <table>
           <thead>
@@ -82,19 +77,19 @@ But what is a pure function?
           </thead>
           <tbody>
             <tr>
-              <td>1</td>
-              <td>2</td>
+              <td>False</td>
+              <td>False</td>
             </tr>
             <tr>
-              <td>2</td>
-              <td>3</td>
+              <td>True</td>
+              <td>False</td>
             </tr>
           </tbody>
         </table>
       </td>
     </tr>
     <tr>
-      <td>2</td>
+      <td>True</td>
       <td>
         <table>
           <thead>
@@ -104,26 +99,17 @@ But what is a pure function?
             </tr>
           </thead>
           <tbody>
-            <tr colspan="2">
-              <td>...</td>
+            <tr>
+              <td>False</td>
+              <td>False</td>
             </tr>
             <tr>
-              <td>1</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>4</td>
-            </tr>
-            <tr colspan="2">
-              <td>...</td>
+              <td>True</td>
+              <td>True</td>
             </tr>
           </tbody>
         </table>
       </td>
-    </tr>
-    <tr colspan="2">
-      <td>...</td>
     </tr>
   </tbody>
 </table>
