@@ -57,6 +57,7 @@ Elm is a pure functional language. That means that all functions in Elm are "pur
 But what is a pure function?
 
 <table>
+  <caption>Add function</caption>
   <thead>
     <tr>
       <th>Input</th>
@@ -64,6 +65,11 @@ But what is a pure function?
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td colspan="2">
+        ...
+      </td>
+    </tr>
     <tr>
       <td>1</td>
       <td>
