@@ -104,6 +104,9 @@ But what is a pure function?
             </tr>
           </thead>
           <tbody>
+            <tr colspan="2">
+              <td>...</td>
+            </tr>
             <tr>
               <td>1</td>
               <td>3</td>
@@ -112,9 +115,15 @@ But what is a pure function?
               <td>2</td>
               <td>4</td>
             </tr>
+            <tr colspan="2">
+              <td>...</td>
+            </tr>
           </tbody>
         </table>
       </td>
+    </tr>
+    <tr colspan="2">
+      <td>...</td>
     </tr>
   </tbody>
 </table>
