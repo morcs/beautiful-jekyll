@@ -56,6 +56,30 @@ Elm is a pure functional language. That means that all functions in Elm are "pur
 
 But what is a pure function?
 
+<table>
+  <thead>
+    <tr>
+      <th>Input</th>
+      <th>Output</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>
+        <table>
+          <thead>
+            <tr>
+              <th>Input</th>
+              <th>Output</th>
+            </tr>
+          </thead>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 * A pure function, given the same input, will always return the same output
 * A pure function produces no side effects.
 
