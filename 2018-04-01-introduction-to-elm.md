@@ -56,6 +56,18 @@ Elm is a pure functional language. That means that all functions in Elm are "pur
 
 But what is a pure function?
 
+The thing that clicked for me was - if a function is pure - it can be thought of as a table of inputs to outputs. For example, a function that adds 2 to its input is a pure function. The table would look like this:
+
+| Input | Output |
+| ----- | ------ |
+| ...   | ...    |
+| -1    | 1      |
+| 0     | 2      |
+| 1     | 3      |
+| 2     | 4      |
+| 3     | 5      |
+| ...   | ...    |
+
 <table>
   <caption>AND function</caption>
   <thead>
@@ -127,17 +139,6 @@ In Elm this looks like:
 addTwo x = x + 2
 ```
 
-As a lookup table, it would look like this.
-
-| Input | Output |
-| ----- | ------ |
-| ...   | ...    |
-| -1    | 1      |
-| 0     | 2      |
-| 1     | 3      |
-| 2     | 4      |
-| 3     | 5      |
-| ...   | ...    |
 
 ### More parameters
 
