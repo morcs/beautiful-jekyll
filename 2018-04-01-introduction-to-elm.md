@@ -41,11 +41,14 @@ Another good reason to learn Elm is if you're interested in learning functional 
 
 ## Functions in Elm
 
-I think a lot of what scares people away from functional languages is the syntax for defining and calling functions looks so unfamiliar and terse compared to other languages like C and JavaScript. That said, if you're familiar with more modern JavaScript, hopefully this code will make sense:
+I think a lot of what scares people away from functional languages is the syntax, especially around functions. Compared to other languages like C and JavaScript, the lack of parentheses and braces can make it look quite unfamiliar. That said, if you're familiar with more modern JavaScript, hopefully this code will make sense:
 
 ```javascript
 let addTwo = x => x + 2;
 ```
+
+
+
 You can actually write something very similar in Elm (and in Haskell and F#):
 
 ```elm
