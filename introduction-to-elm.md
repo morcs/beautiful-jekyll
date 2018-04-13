@@ -5,7 +5,7 @@ bigimg: /img/elm-leaf.jpg
 hidden: true
 ---
 
-I've created this page to support my "Introduction to Elm" hands-on talk. The slides are available on [slides.com](http://slides.com/morcs/introduction-to-elm).
+This page exists to support my "Introduction to Elm" hands-on talk. The slides are available on [slides.com](http://slides.com/morcs/introduction-to-elm).
 
 ## Hands-on exercises
 
