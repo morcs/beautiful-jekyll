@@ -15,9 +15,7 @@ The exercises go along with the talk in order to provide the "hands-on" bits. In
 
 [View Exercise](https://ellie-app.com/mwRph7znwa1/2)
 
-Fill in the card rendering code so that there's a table with a row for each "stat". 
-
-The resulting HTML should look something like this:
+Fill in the card rendering code so that there's a table with a row for each "stat". The resulting HTML should look something like this:
 
 ```html
 <table class="table mb-0">
