@@ -15,10 +15,22 @@ The samples go along with the talk in order to provide the "hands-on" bits. In m
 
 Exercise
 
-Fill in the card rendering code so that there's a table row for each "stat". The resulting HTML should look something like:
+Fill in the card rendering code so that there's a table row for each "stat". 
+
+The resulting HTML should look something like this:
 
 ```html
-<table class="table mb-0"><tr><th>Nonchalance</th><td class="text-right">8</td></tr><tr><th>Aggression</th><td class="text-right">6</td></tr><tr><th>Glamour</th><td class="text-right">4</td></tr><tr><th>Speed</th><td class="text-right">5</td></tr></table>
+<table class="table mb-0">
+  <tr>
+    <th>Nonchalance</th>
+    <td class="text-right">8</td>
+  </tr>
+  <tr>
+    <th>Aggression</th>
+     <td class="text-right">6</td>
+  </tr>
+  ...
+</table>
 ```
 
 [Solution](https://ellie-app.com/mwRph7znwa1/1) |
