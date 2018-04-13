@@ -1,8 +1,8 @@
 ---
-layout: base
+layout: page
 title: Introduction to Elm
 bigimg: /img/elm-leaf.jpg
 hidden: true
 ---
 
-Code Samples
+## Code Samples
