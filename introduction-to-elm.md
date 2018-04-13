@@ -7,15 +7,15 @@ hidden: true
 
 I've created this page to support my "Introduction to Elm" hands-on talk. The slides are available on [slides.com](http://slides.com/morcs/introduction-to-elm).
 
-## Code samples
+## Hands-on exercises
 
-The samples go along with the talk in order to provide the "hands-on" bits. In most cases the exercise will have at least one compiler error present, which should help to guide the solution.
+The exercises go along with the talk in order to provide the "hands-on" bits. In most cases the exercise will have at least one compiler error present, which should help to guide the solution.
 
-### 1. Markup
+### Exercise 1 - Markup
 
-Exercise
+[View Exercise](https://ellie-app.com/mwRph7znwa1/2)
 
-Fill in the card rendering code so that there's a table row for each "stat". 
+Fill in the card rendering code so that there's a table with a row for each "stat". 
 
 The resulting HTML should look something like this:
 
@@ -33,7 +33,7 @@ The resulting HTML should look something like this:
 </table>
 ```
 
-[Solution](https://ellie-app.com/mwRph7znwa1/1) |
+[View Solution](https://ellie-app.com/mwRph7znwa1/1) |
 
 ## Elm resources
 
