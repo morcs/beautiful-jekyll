@@ -13,7 +13,7 @@ The exercises go along with the talk in order to provide the "hands-on" bits. In
 
 ### Exercise 1 - Markup
 
-[View Exercise](https://ellie-app.com/mwRph7znwa1/2)
+| [View Exercise](https://ellie-app.com/mwRph7znwa1/2) |
 
 Fill in the card rendering code so that there's a table with a row for each "stat". The resulting HTML should look something like this:
 
@@ -31,7 +31,7 @@ Fill in the card rendering code so that there's a table with a row for each "sta
 </table>
 ```
 
-[View Solution](https://ellie-app.com/mwRph7znwa1/1) |
+| [View Solution](https://ellie-app.com/mwRph7znwa1/1) |
 
 ## Elm resources
 
