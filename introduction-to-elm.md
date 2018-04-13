@@ -11,7 +11,7 @@ I've created this page to support my "Introduction to Elm" hands-on talk. The sl
 
 The samples go along with the talk in order to provide the "hands-on" bits. In most cases the exercise will have at least one compiler error present, which should help to guide the solution.
 
-|| 1 - Markup || Exercise || [Solution](https://ellie-app.com/mwRph7znwa1/1) ||
+| 1 - Markup | Exercise | [Solution](https://ellie-app.com/mwRph7znwa1/1) |
 
 ## Elm resources
 
