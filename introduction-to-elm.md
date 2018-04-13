@@ -11,7 +11,17 @@ I've created this page to support my "Introduction to Elm" hands-on talk. The sl
 
 The samples go along with the talk in order to provide the "hands-on" bits. In most cases the exercise will have at least one compiler error present, which should help to guide the solution.
 
-| 1 - Markup | Exercise | [Solution](https://ellie-app.com/mwRph7znwa1/1) |
+### 1. Markup
+
+Exercise
+
+Fill in the card rendering code so that there's a table row for each "stat". The resulting HTML should look something like:
+
+```html
+<table class="table mb-0"><tr><th>Nonchalance</th><td class="text-right">8</td></tr><tr><th>Aggression</th><td class="text-right">6</td></tr><tr><th>Glamour</th><td class="text-right">4</td></tr><tr><th>Speed</th><td class="text-right">5</td></tr></table>
+```
+
+[Solution](https://ellie-app.com/mwRph7znwa1/1) |
 
 ## Elm resources
 
