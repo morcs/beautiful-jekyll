@@ -33,6 +33,23 @@ Fill in the card rendering code so that there's a table with a row for each "sta
 
 [View Solution](https://ellie-app.com/mwRph7znwa1/5)
 
+### Exercise 2 - Union types
+
+[View Exercise](https://ellie-app.com/mwRph7znwa1/8)
+
+Fix the code so that we can show loading and error states, using the HTML snippets shown below. Lean on the compiler to help you work out where the errors are!
+
+```html
+<div class="alert alert-success">Loading...</div>
+```
+
+```html
+<div class="alert alert-danger">Error message goes here</div>
+```
+Since we're not actually doing an HTTP request yet, you can test each state by trying different values for `model`, e.g. changing from `model = Loading` to `model = CardList testCards`.
+
+[View Solution](https://ellie-app.com/mwRph7znwa1/7)
+
 ## Elm resources
 
 Some useful links for those wanting to learn more about Elm:
