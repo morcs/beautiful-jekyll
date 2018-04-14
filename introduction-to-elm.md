@@ -50,6 +50,12 @@ Since we're not actually doing an HTTP request yet, you can test each state by t
 
 [View Solution](https://ellie-app.com/mwRph7znwa1/7)
 
+### Exercise 3 - The update function
+
+[View Exercise](https://ellie-app.com/mwRph7znwa1/10)
+
+[View Solution](https://ellie-app.com/mwRph7znwa1/9)
+
 ## Elm resources
 
 Some useful links for those wanting to learn more about Elm:
