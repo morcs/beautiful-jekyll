@@ -37,7 +37,7 @@ Fill in the card rendering code so that there's a table with a row for each "sta
 
 [View Exercise](https://ellie-app.com/mwRph7znwa1/8)
 
-Fix the code so that we can show loading and error states, using the HTML snippets shown below. Lean on the compiler to help you work out where the errors are!
+Fix the code so that we can show loading and error states, using the HTML snippets shown below. Lean on the compiler to help you work out what's left to do!
 
 ```html
 <div class="alert alert-success">Loading...</div>
