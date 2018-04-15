@@ -54,6 +54,10 @@ Since we're not actually doing an HTTP request yet, you can test each state by t
 
 [View Exercise](https://ellie-app.com/mwRph7znwa1/10)
 
+Fill in the update function so that the customer can test what the app looks like in all three different states.
+
+If you have time, add a button to allow them to get back to the loading state.
+
 [View Solution](https://ellie-app.com/mwRph7znwa1/9)
 
 ## Elm resources
