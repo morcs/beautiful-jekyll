@@ -56,7 +56,7 @@ Since we're not actually doing an HTTP request yet, you can test each state by t
 
 Fill in the update function so that the customer can test what the app looks like in all three different states.
 
-If you have time, add a button to allow them to get back to the loading state.
+If you have time, add a button to allow them to get back to the loading state, and maybe have two buttons to test different error message text.
 
 [View Solution](https://ellie-app.com/mwRph7znwa1/9)
 
