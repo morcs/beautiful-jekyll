@@ -72,55 +72,55 @@ The thing that clicked for me was - if a function is pure - it can be thought of
 | ...   | ...    |
 
 <table>
-  <caption>AND function</caption>
+  <caption>Add function</caption>
   <thead>
     <tr>
-      <th>Input</th>
-      <th>Output</th>
+      <th>Input (Int)</th>
+      <th>Output (Int -> Int)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>False</td>
+      <td>1</td>
       <td>
         <table>
           <thead>
             <tr>
-              <th>Input</th>
-              <th>Output</th>
+              <th>Input (Int)</th>
+              <th>Output (Int)</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>False</td>
-              <td>False</td>
+              <td>1</td>
+              <td>2</td>
             </tr>
             <tr>
-              <td>True</td>
-              <td>False</td>
+              <td>2</td>
+              <td>3</td>
             </tr>
           </tbody>
         </table>
       </td>
     </tr>
     <tr>
-      <td>True</td>
+      <td>1</td>
       <td>
         <table>
           <thead>
             <tr>
-              <th>Input</th>
-              <th>Output</th>
+              <th>Input (Int)</th>
+              <th>Output (Int)</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>False</td>
-              <td>False</td>
+              <td>1</td>
+              <td>3</td>
             </tr>
             <tr>
-              <td>True</td>
-              <td>True</td>
+              <td>2</td>
+              <td>4</td>
             </tr>
           </tbody>
         </table>
