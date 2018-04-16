@@ -104,7 +104,7 @@ The thing that clicked for me was - if a function is pure - it can be thought of
       </td>
     </tr>
     <tr>
-      <td>1</td>
+      <td>2</td>
       <td>
         <table>
           <thead>
