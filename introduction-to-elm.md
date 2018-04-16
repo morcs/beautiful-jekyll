@@ -64,7 +64,19 @@ If you have time, add a button to allow them to get back to the loading state, a
 
 [View Exercise](https://ellie-app.com/mwRph7znwa1/13)
 
+Complete the code so that the user can select a card.
 
+When no card is selected, use the following HTML for the top bar:
+
+```html
+<div class="fixed-top bg-success text-white p-3">Please select a card</div>
+```
+
+When a card is selected, use this HTML:
+
+```html
+<div class="fixed-top bg-primary text-white p-3">Selected: <strong>{{card.name}}</strong></div>
+```
 
 [View Solution](https://ellie-app.com/mwRph7znwa1/12)
 
