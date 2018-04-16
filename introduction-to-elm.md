@@ -60,6 +60,14 @@ If you have time, add a button to allow them to get back to the loading state, a
 
 [View Solution](https://ellie-app.com/mwRph7znwa1/9)
 
+### Exercise 4 - Maybe
+
+[View Exercise](https://ellie-app.com/mwRph7znwa1/13)
+
+
+
+[View Solution](https://ellie-app.com/mwRph7znwa1/12)
+
 ## Elm resources
 
 Some useful links for those wanting to learn more about Elm:
