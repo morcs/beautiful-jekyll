@@ -82,6 +82,8 @@ When a card is selected, use this HTML:
 
 ### Exercise 5 - Extending messages (HTTP)
 
+Hint <span style="background-color:#000000">Try changing the Select message type</span>
+
 [View Solution](https://ellie-app.com/mwRph7znwa1/14)
 
 ## Elm resources
