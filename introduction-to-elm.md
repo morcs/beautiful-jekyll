@@ -80,7 +80,7 @@ When a card is selected, use this HTML:
 
 [View Solution](https://ellie-app.com/mwRph7znwa1/12)
 
-### Exercise 5 - Extending Messages (HTTP)
+### Exercise 5 - Extending messages (HTTP)
 
 [View Solution](https://ellie-app.com/mwRph7znwa1/14)
 
