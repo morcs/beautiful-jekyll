@@ -82,9 +82,50 @@ When a card is selected, use this HTML:
 
 ### Exercise 5 - Extending messages (HTTP)
 
-Hint <span style="background-color:#000000">Try changing the Select message type</span>
+Finish getting the code to compile so that cards can be loaded from the API.
+
+N.b. The definition of the `Result` type is:
+
+```
+type Result error value
+    = Ok value
+    | Err error
+```
+
+Hint: Looking at the definition of the Loaded type along with the above should help.
 
 [View Solution](https://ellie-app.com/mwRph7znwa1/14)
+
+### Further Exercises
+
+#### Make the illegal state unrepresentable
+
+In the above code, the `Select` branch of the update statement bothers me, because:
+
+1. I don't like the nesting of `case` expressions.
+2. The second part of the inner `case` expression represents an illegal state, that we should never be able to get to anyway!
+
+I went on the Elm forums to get their opinion, and it turns out there is a fairly simple way to fix this. Can you work it out?
+
+Hint <span style="color:#0000;background-color:#000000">Try changing the Select message type itself</span>
+
+#### Add a reload button
+
+Add a button to be shown on the card list view that allows the user to reload a new set of random cards from the API. After pressing the button, no card should be selected (even if one was selected before).
+
+N.b. This will give you chance to try out returning a command from the update function!
+
+#### There is another illegal state we can make unrepresentable!
+
+The model currently could represent a situation where the selected card isn't one of the cards in the list. Can we prevent this? (The ["Making Impossible States Impossible" (video)](https://www.youtube.com/watch?v=IcgmSRJHu_8) shows how to do this).
+
+#### Automatically select a card after 30 seconds
+
+Imagine this is part of a multiplayer game - we don't want to wait forever if one player walks away from their screen, so we could add a rule where their first card is automatically selected after 30 seconds. You'll need to use the `subscriptions` function to do this. 
+
+See the [Clock example](http://elm-lang.org/examples/clock) and this [StackOverflow post](https://stackoverflow.com/questions/40599512/how-to-achieve-behavior-of-settimeout-in-elm?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa).
+
+You could also adapt this to show a countdown in the top bar!
 
 ## Elm resources
 
