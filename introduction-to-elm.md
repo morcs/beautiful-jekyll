@@ -82,6 +82,8 @@ When a card is selected, use this HTML:
 
 ### Exercise 5 - Extending messages (HTTP)
 
+[View Exercise](https://ellie-app.com/mwRph7znwa1/16)
+
 Finish getting the code to compile so that cards can be loaded from the API.
 
 N.b. The definition of the `Result` type is:
@@ -92,7 +94,7 @@ type Result error value
     | Err error
 ```
 
-Hint: Looking at the definition of the Loaded type along with the above should help.
+Hint: Looking at the definition of the `Loaded` type along with the above should help.
 
 [View Solution](https://ellie-app.com/mwRph7znwa1/14)
 
