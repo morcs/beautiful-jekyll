@@ -80,6 +80,10 @@ When a card is selected, use this HTML:
 
 [View Solution](https://ellie-app.com/mwRph7znwa1/12)
 
+### Exercise 5 - Extending Messages (HTTP)
+
+[View Solution](https://ellie-app.com/mwRph7znwa1/14)
+
 ## Elm resources
 
 Some useful links for those wanting to learn more about Elm:
