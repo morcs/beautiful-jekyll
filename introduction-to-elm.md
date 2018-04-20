@@ -75,7 +75,7 @@ When no card is selected, use the following HTML for the top bar:
 When a card is selected, use this HTML:
 
 ```html
-<div class="fixed-top bg-primary text-white p-3">Selected: <strong>{{card.name}}</strong></div>
+<div class="fixed-top bg-primary text-white p-3">Selected: <strong>Brian</strong></div>
 ```
 
 [View Solution](https://ellie-app.com/mwRph7znwa1/12)
