@@ -17,6 +17,8 @@ The exercises go along with the talk in order to provide the "hands-on" bits. In
 
 This exercise follows along with the slides in the talk.
 
+[View Solution](https://ellie-app.com/rYZCjGkTga1/2)
+
 ### Exercise 1 - Markup
 
 [View Exercise](https://ellie-app.com/mwRph7znwa1/6)
