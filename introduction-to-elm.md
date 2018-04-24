@@ -7,6 +7,10 @@ hidden: true
 
 This page exists to support my "Introduction to Elm" hands-on talk. The slides are available on [slides.com](http://slides.com/morcs/introduction-to-elm).
 
+## Warmup
+
+Use [Ellie](https://ellie-app.com/) to follow along with the slides.
+
 ## Hands-on exercises
 
 The exercises go along with the talk in order to provide the "hands-on" bits. In most cases the exercise will have at least one compiler error present, which should help to guide the solution.
