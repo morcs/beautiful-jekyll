@@ -104,8 +104,6 @@ type Result error value
 
 Hint: Looking at the definition of the `Loaded` type along with the above should help.
 
-[View Solution](https://ellie-app.com/mwRph7znwa1/14)
-
 ### Further Exercises
 
 #### 1. Add a reload button
@@ -124,6 +122,8 @@ In the above code, the `Select` branch of the update statement bothers me, becau
 I went on the Elm forums to get their opinion, and it turns out there is a fairly simple way to fix this. Can you work it out?
 
 Hint <span style="color:#0000;background-color:#000000">Try changing the Select message type itself</span>
+
+[View Solution (includes Exercise 5 and reload button)](https://ellie-app.com/mwRph7znwa1/14)
 
 #### 3. There is another illegal state we can make unrepresentable!
 
