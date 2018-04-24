@@ -9,7 +9,7 @@ This page exists to support my "Introduction to Elm" hands-on talk. The slides a
 
 ## Warmup
 
-Use [Ellie](https://ellie-app.com/) to follow along with the slides.
+During this part of the talk, use [Ellie](https://ellie-app.com/) to follow along with the slides.
 
 ## Hands-on exercises
 
