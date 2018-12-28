@@ -1,3 +1,7 @@
+Recursion is easier to understand when you stop trying to look at the whole picture.
+
+Use classes for actions.
+
 ```C#
 using System;
 
