@@ -11,4 +11,28 @@ At the same time, the more I delve into the world of functional programming, the
 
 In this post I'm going to take an example from the Redux documentation, show the same thing in Elm, demonstrate the advantages that the Elm equivalent has, and finally see if I can tweak the Redux version to mirror the same benefits.
 
-TBC
+```
+const todos = (state = [], action) => {
+  switch (action.type) {
+    case 'ADD_TODO':
+      return [
+        ...state,
+        {
+          id: action.id,
+          text: action.text,
+          completed: false
+        }
+      ]
+    case 'TOGGLE_TODO':
+      return state.map(todo =>
+        (todo.id === action.id)
+          ? {...todo, completed: !todo.completed}
+          : todo
+      )
+    default:
+      return state
+  }
+}
+
+export default todos
+```
