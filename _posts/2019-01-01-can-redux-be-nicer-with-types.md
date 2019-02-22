@@ -7,6 +7,8 @@ bigimg: /img/bench-couple-date-6051.jpg
 
 TBC
 
+https://github.com/reduxjs/redux/tree/master/examples/todos
+
 ```
 const todos = (state = [], action) => {
   switch (action.type) {
@@ -20,4 +22,14 @@ const todos = (state = [], action) => {
 }
 
 export default todos
+```
+
+```
+update : Msg -> Model -> Model
+update msg model =
+    case msg of
+        AddTodo id text ->
+            addTodo model id text
+        ToggleTodo id ->
+            toggleTodo model id
 ```
