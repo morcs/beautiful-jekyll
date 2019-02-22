@@ -11,11 +11,9 @@ TBC
 const todos = (state = [], action) => {
   switch (action.type) {
     case 'ADD_TODO':
-      // return a new state with an extra todo added
-      // the new todo should have id and text based on action.id and action.text
+      return addTodo(state, action.id, action.text);
     case 'TOGGLE_TODO':
-      // return state with todo complete state toggled
-      // the todo item to toggle should be identified using action.id
+      return toggleTodo(state, action.id);
     default:
       return state
   }
