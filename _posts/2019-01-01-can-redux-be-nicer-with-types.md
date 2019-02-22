@@ -20,16 +20,13 @@ const todos = (state = [], action) => {
       return state
   }
 }
-
-export default todos
 ```
 
 ```
-update : Msg -> Model -> Model
-update msg model =
-    case msg of
+update action state =
+    case action of
         AddTodo id text ->
-            addTodo model id text
+            addTodo id text state
         ToggleTodo id ->
-            toggleTodo model id
+            toggleTodo id state
 ```
