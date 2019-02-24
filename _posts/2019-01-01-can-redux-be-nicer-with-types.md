@@ -40,3 +40,5 @@ update action state =
 ```
 
 So I'm going to add TypeScript to the Redux version and try and get some order up in this chaos.
+
+It turns out that union types in F# compile down to the equivalent of a C# class heirarchy. Maybe functional and object-oriented programming aren't that different after all...
