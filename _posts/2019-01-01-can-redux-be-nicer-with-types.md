@@ -5,11 +5,13 @@ tags: [functional-programming]
 bigimg: /img/bench-couple-date-6051.jpg
 ---
 
-I'm going to take a reducer from the [Redux Todos Example](https://github.com/reduxjs/redux/tree/master/examples/todos).
+I'm going to take an example reducer from the [Redux Todos Example](https://github.com/reduxjs/redux/tree/master/examples/todos).
 
-To recap, a reducer is a pure function. It takes the existing state and an "action" representing a requested change. The reducer's job is to return a new state, which is the result of applying the requested change to the existing state.
+To recap, a _reducer_ is a pure function. It takes the existing state and an "action" representing a requested change. The reducer's job is to apply the action to the existing state and return a new state for us to use.
 
-Since we'll usually have more than one type of action, the reducer usually ends up branching into individual implementations for each possible type of action, using a switch statement. Usually each of these implementations is left inline but for this snippet I've extracted them into their own functions (`addToDo` and `toggleToDo`). These are basically implementations of the reducer for one specific type of action.
+Since we'll usually have more than one type of action, the reducer usually ends up as a switch statement with a case for each type of action. If you think about it, the code within each case statement is effectively a reducer in itself, which works only for one specific type of action. 
+
+In the example below I've extracted each of the implementations into their own functions (`addTodo` and `toggleTodo`) just so that we can focus on the higher level reducer. The actual implementation of these functions isn't really important, but it should be clear what they do.
 
 ```
 const todos = (state = [], action) => {
