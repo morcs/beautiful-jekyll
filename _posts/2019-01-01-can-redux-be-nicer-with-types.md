@@ -28,7 +28,7 @@ const todos = (state = [], action) => {
 }
 ```
 
-Here's the equivalent in Elm. I've used Redux's naming conventions rather than Elm's to help show a comparison with the Redux version above. You can see that apart from having a lot less punctation, it's very similar:
+Here's the equivalent in Elm. I've used Redux's names for things rather than Elm's (`action` instead of `msg` and `state` instead of `model`) to help compare to the version above. You can see that apart from having a lot less punctation, it's very similar:
 
 ```
 update action state =
