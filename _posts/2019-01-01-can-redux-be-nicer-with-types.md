@@ -28,6 +28,8 @@ const todos = (state = [], action) => {
 }
 ```
 
+Here's the equivalent in Elm. I've used Redux's naming conventions rather than Elm's to help show a comparison with the Redux version above. You can see that apart from having a lot less punctation, it's very similar:
+
 ```
 update action state =
     case action of
