@@ -5,6 +5,8 @@ tags: [functional-programming]
 bigimg: /img/bench-couple-date-6051.jpg
 ---
 
+WIP
+
 I'm going to take an example reducer from the [Redux Todos Example](https://github.com/reduxjs/redux/tree/master/examples/todos).
 
 To recap, a _reducer_ is a pure function. It takes the existing state and an "action" representing a requested change. The reducer's job is to apply the action to the existing state and return a new state for us to use.
@@ -34,3 +36,5 @@ update action state =
         ToggleTodo id ->
             toggleTodo id state
 ```
+
+So I'm going to add TypeScript to the Redux version and try and get some order up in this chaos.
