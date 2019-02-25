@@ -28,7 +28,9 @@ const todos = (state = [], action) => {
 }
 ```
 
-Here's the equivalent in Elm. I've used Redux's names for things rather than Elm's (`action` instead of `msg` and `state` instead of `model`) to help compare to the version above. You can see that apart from having a lot less punctation, it's very similar:
+Here's the equivalent in Elm. I've used Redux's names for things* to help compare to the version above.
+
+* Elm usually uses msg and model rather than action and state
 
 ```
 update action state =
@@ -38,6 +40,15 @@ update action state =
         ToggleTodo id ->
             toggleTodo id state
 ```
+
+Doesn't look that different really, apart from maybe a slightly scary on first appearance lack of punctuation? The key difference we care about here is the fact that the actions types are explicit. To show that I need to show the type of `state`:
+
+```
+type Ssg
+    = AddTodo Int String
+    | ToggleTodo Int
+
+...
 
 So I'm going to add TypeScript to the Redux version and try and get some order up in this chaos.
 
