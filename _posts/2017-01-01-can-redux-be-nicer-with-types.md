@@ -7,6 +7,7 @@ bigimg: /img/bench-couple-date-6051.jpg
 
 * Pure functions
 * Program - list of inputs
+* Reducer
 
 WIP
 
