@@ -5,6 +5,9 @@ tags: [functional-programming]
 bigimg: /img/bench-couple-date-6051.jpg
 ---
 
+* Pure functions
+* Program - list of inputs
+
 WIP
 
 I'm going to take an example reducer from the [Redux Todos Example](https://github.com/reduxjs/redux/tree/master/examples/todos).
