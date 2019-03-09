@@ -1,3 +1,3 @@
 So can a program that does anything useful be represented as a pure function?
 
-In some cases they obviously can. A `bash` command for example. The `wc` command takes a file as input and outputs the number of words in the file. Given the same file it'll always return the same number. You can easily imagine an infinitely long table that lists every possible sequence and combination of text characters in the left hand column, and a count of the number of words in that text in the right-hand column.
+In some cases they obviously can. The `bash` command `wc` for example takes a file as input and returns the number of words in the file as output. Given the same file it'll always return the same number. You can easily imagine an infinitely long table with a row for every possible sequence of text characters, mapped to the number of words in that text.
