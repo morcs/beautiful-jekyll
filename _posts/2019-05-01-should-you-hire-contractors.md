@@ -23,6 +23,6 @@ Conversely, the contractor will know they are likely to have to work with your f
 
 Obviously there's an additional benefit of hiring direct/via recommendation - you may be able to save on recruiting fees.
 
-In summary, when hiring contractors, or deciding how to hire for your team in the long-term, consider the additional benefit of focussing your initial efforts on just one or two really good freelancers, it might turn out to be a more efficient way of finding that team!
+In summary, when hiring contractors, or deciding how to build your team over the long-term, consider the additional benefit of focussing your initial efforts on just one or two really good freelancers, it might actually turn out to be a more efficient way of building that team!
 
 (Image by [Arek Socha](https://pixabay.com/users/qimono-1962238/?utm_source=link-attribution&utm_medium=referral&_campaign=image&_content=1767562) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1767562))
