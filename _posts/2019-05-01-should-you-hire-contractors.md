@@ -11,14 +11,18 @@ I recently finished my first gig as a contractor. It was a great experience and,
 
 One thing that struck me was the positive effect of hiring one or two highly experienced contractors to begin with, particularly in the context of a longer-term need to hire more people, both temporary and permanent.
 
-There is the chance that if it's a good fit from both sides, you may be able to convince the contractor to join as a permanent employee, but I think there's an even more valuable aspect in terms of future hiring, especially if the contractor is local.
+There is a chance that if it's a good fit from both sides, you may be able to convince the contractor to join as a permanent employee, but I think there's an even more valuable aspect in terms of future hiring, especially if the contractor is local.
 
-As a side-effect of the temporary nature of contract work, the contractor is likely to have built relationships many others in the field as they've moved around. If you're hiring, that contractor can probably put you in touch with and be able to recommend others (as well as warn you against potential bad hires that arrive through other channels!).
+As a side-effect of the temporary nature of contract work, the contractor is likely to have built relationships many others in the field as they've moved around. If you're hiring, that contractor can probably put you in touch with and be able to recommend other people (as well as warn you against potential bad hires that arrive through other channels!).
 
-Without wanting to be too hard on recruiters (obviously there are good ones who do a valuable job!), the contractor will know they are likely to have to work with your future hires. That means there's a a stronger incentive for them to only recommend good people when compared to commissioned agents.
+Without wanting to be too hard on recruiters (obviously there are good ones who do a valuable job!), it's very difficult for them to vet candidates based on how good they actually are. Plus unfortunately there isn't a great deal of incentive to do so.
 
-Obviously there's an additional benefit in that by hiring direct you may be able to save on recruiting fees.
+Likewise, along with being painful and time-consuming, I think most will agree that interviewing alone is far from a perfect method of assessing candidates.
 
-In summary, consider the option of focussing your initial hiring efforts on one or two really good contractors or freelancers, rather than trying to go straight into hiring an entire permanent team, as it might turn out to be a more efficient way of getting to that team!
+Conversely, the contractor will know they are likely to have to work with your future hires. That means there's a much stronger incentive for them to only recommend good people when compared to commissioned agents. Plus their assessment is likely to be based on their experience of actually having worked with them!
+
+Obviously there's an additional benefit of hiring direct/via recommendation - you may be able to save on recruiting fees.
+
+In summary, when thinking about hiring, consider the option of focussing your initial efforts on one or two really good contractors or freelancers, rather than trying to go straight into hiring an entire team, as it might turn out to be a more efficient way of finding that team!
 
 (Image by [Arek Socha](https://pixabay.com/users/qimono-1962238/?utm_source=link-attribution&utm_medium=referral&_campaign=image&_content=1767562) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1767562))
