@@ -14,7 +14,7 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: James Morcom, Web Dev
+title: James Morcom, Full-Stack Dev
 
 # Short description of your site
 description: Freelance Full-Stack Web Developer
@@ -73,12 +73,12 @@ author:
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
   rss: true
-#  email: "morcs@morcs.com"
-#  facebook: daattali
+  #  email: "morcs@morcs.com"
+  #  facebook: daattali
   github: morcs
   twitter: morcs
-#  reddit: yourname
-#  google-plus: +DeanAttali
+  #  reddit: yourname
+  #  google-plus: +DeanAttali
   linkedin: morcs
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
@@ -100,7 +100,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "morcs.com"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "morcs.com" # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
@@ -148,16 +148,14 @@ kramdown:
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
-      comments: true  # add comments to all blog posts
+      comments: true # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
-  -
-    scope:
+  - scope:
       path: "" # all files
     values:
       layout: "page"
@@ -179,8 +177,8 @@ exclude:
 
 # prose.io config
 prose:
-  rooturl: '_posts'
-  media: 'img'
+  rooturl: "_posts"
+  media: "img"
   ignore:
     - 404.html
     - LICENSE
@@ -228,10 +226,9 @@ prose:
           element: "checkbox"
           label: "Publish"
           help: "Check to publish post, uncheck to hide."
- 
+
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
-
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
