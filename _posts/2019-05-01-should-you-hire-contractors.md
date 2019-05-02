@@ -27,6 +27,6 @@ In one case I experienced, the client had decided to offer a contract to a candi
 
 Of course, there is an additional benefit of hiring direct through recommendation, in that it may also save on recruiting fees.
 
-In summary then, when deciding whether to hire contractors, it might be worth factoring in the additional benefit of focussing your initial efforts on just one or two highly experienced ones. It could actually turn out to be a more efficient way of building up a larger team over the long-term!
+Obviously I'm not suggesting hiring someone just to get access to others, but if you were thinking about hiring contractors anyway, it might be worth factoring in the additional benefit of focussing your initial efforts on just one or two highly experienced ones. It could actually turn out to be a more efficient way of building up a larger team over the long-term!
 
 (Image by [Arek Socha](https://pixabay.com/users/qimono-1962238/?utm_source=link-attribution&utm_medium=referral&_campaign=image&_content=1767562) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1767562))
