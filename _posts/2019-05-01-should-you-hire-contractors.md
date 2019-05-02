@@ -5,7 +5,7 @@ tags: []
 bigimg: /img/doors.jpg
 ---
 
-If you're trying to hire, finding good people in such a high demand industry is incredibly difficult, and you have my sympathy!
+If you're trying to hire for a software development team, finding good people in such a high demand industry is incredibly difficult, and you have my sympathy!
 
 I recently finished my first gig as a contractor. It was a great experience and, whilst I'm actually considering trying something slightly different for my next experiment (another story for another post), I'd noticed a couple of interesting consequences of hiring contractors from the client's perspective that hadn't occurred to me before.
 
