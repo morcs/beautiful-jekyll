@@ -19,6 +19,8 @@ Without wanting to be too hard on recruiters (obviously there are good ones who 
 
 Conversely, a contractor recommending someone will know they are likely to have to work with them. That means there's a much stronger incentive for them to only recommend _good_ people. Plus their assessment is likely to be based on their experience of actually having worked with them. I think most people will agree that reading CVs and interviewing alone is a pretty poor proxy for actual experience working with a candidate.
 
+Another difficulty of hiring is that the best candidates are quite likely to already be gainfully employed, and essentially "off the market" to recruiters. They're much more likely to respond to a potential job offer that comes through from a former colleague than from an agent, meaning an increase in the pool of accessible hires.
+
 In addition, the contractor may be able to warn you against potential bad hires that arrive through other channels, a service you certainly couldn't expect a recruiter to provide.
 
 In one case I experienced, the client had decided to offer a contract to a candidate who seemed very technically proficient, but there were a few concerns around a potential personality clash. Luckily the client had mentioned this to my fellow contractor, who it turned out had previously worked with this particular candidate. To cut a long story short, his intervention saved the client from what would have been an expensive hiring mistake!
