@@ -13,7 +13,7 @@ One thing that struck me was the positive effect of hiring one or two highly exp
 
 There is a chance that if it's a good fit from both sides, you may be able to convince the contractor to join as a permanent employee, but I think there's an even more valuable aspect in terms of future hiring, especially if the contractor is local.
 
-As a side-effect of the temporary nature of contract work, the contractor is likely to have built relationships many others in the field as they've moved around. If you're hiring, that contractor can probably put you in touch with and be able to recommend other people (as well as warn you against potential bad hires that arrive through other channels!).
+As a side-effect of the temporary nature of contract work, the contractor is likely to have built relationships with many others in the field as they've moved around. If you're hiring, that contractor can probably put you in touch with and be able to recommend other people (as well as warn you against potential bad hires that arrive through other channels!).
 
 Without wanting to be too hard on recruiters (obviously there are good ones who do a valuable job!), it's very difficult for them to vet candidates based on how good they actually are. Plus unfortunately there isn't a great deal of incentive to do so.
 
