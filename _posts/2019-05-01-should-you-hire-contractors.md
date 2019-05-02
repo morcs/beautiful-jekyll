@@ -21,7 +21,7 @@ Conversely, a contractor recommending someone will know they are likely to have 
 
 In addition, the contractor may be able to warn you against potential bad hires that arrive through other channels, a service you certainly couldn't expect a recruiter to provide!
 
-In one particular case I experienced, the client had decided to offer a contract to a candidate who seemed very technically proficient, but there were a few concerns around a potential personality clash. Luckily the client had mentioned this to my fellow contractor, who it turned out had previous experience working with this particular candidate. To cut a long story short, his intervention saved the client from what would have been an expensive hiring mistake!
+In one case I experienced, the client had decided to offer a contract to a candidate who seemed very technically proficient, but there were a few concerns around a potential personality clash. Luckily the client had mentioned this to my fellow contractor, who it turned out had previous experience working with this particular candidate. To cut a long story short, his intervention saved the client from what would have been an expensive hiring mistake!
 
 Obviously there is an additional benefit of hiring direct through recommendation, in that it may also save on recruiting fees.
 
