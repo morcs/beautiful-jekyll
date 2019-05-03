@@ -19,11 +19,11 @@ With that in mind, I can't help thinking that whilst Elm is a purely functional 
 
 ## The Experiment
 
-For this experiment, I'm going to take an example reducer from the [Redux Todos Example](https://github.com/reduxjs/redux/tree/master/examples/todos), try implementing it in Elm, then add types to the Redux version based on the typing I end up with in Elm.
+For this experiment, I'm going to take a reducer from the [Redux Todos Example](https://github.com/reduxjs/redux/tree/master/examples/todos), try implementing it in Elm, then try to recreate the Elm design in the Redux version by adding TypeScript.
 
 For clarity, I've extracted the code dealing with each case/action into its own function (`addTodo` and `toggleTodo`) just so that we can focus on the higher level reducer. The actual implementation of these functions isn't really important, but it should be clear what they do.
 
-Here's the JavaScript version:
+With that in mind, here's the JavaScript version:
 
 ```javascript
 const todos = (state = [], action) => {
@@ -51,9 +51,9 @@ todos action state =
 
 I've noticed that when I first show Elm to people who've not seen an ML-based language before, their reaction is usually somewhere between disgust and horror. I'm not sure if it's the lack of punctuation that puts them off, but I'm hoping that by showing the direct equivalent in React first, and by tweaking some of the names in the Elm version to be more familiar to React/Redux devs\*, I can overcome this issue.
 
-\* Elm conventionally uses `update`, `msg` and `model` rather than `reducer`, `action` and `state`.
+\* Elm conventionally uses `update`, `msg` and `model` rather than `reducer`, `action` and `state` respectively.
 
-Hopefully it's fairly obvious that whilst it looks a little different, this code is essentially doing exactly the same thing as the React/Redux reducer above it.
+Whilst it looks a little different, this code is essentially doing exactly the same thing as the React/Redux reducer above it.
 
 ## Adding Types
 
@@ -64,5 +64,13 @@ type Action
     = AddTodo Int String
     | ToggleTodo Int
 ```
+
+I like to think this mostly explains itself, but fundamentally it means that if you have a value of type `Action`, then either it must be an `AddTodo`, with an integer for the new ID and a string for the text, or it must be a `ToggleTodo` with an integer representing the ID of the item to toggle.
+
+Obviously the benefit of this sort of static typing is that the compiler will stop you doing silly things like trying to access the `text` value on the `ToggleTodo` action. Another benefit with Elm which might not be apparent is the compiler will tell you if you've forgotten to account for a particular case of `Action`. This happens to me all the time with Redux, where I've added a new action but have forgotten to add a case to the reducer. When this happens it shows up only at runtime by nothing happening, followed by a few minutes head-scratching before working out where the issue is. For me, having the compiler prevent me doing this is worth the effort of typing on its own!
+
+## Union types
+
+The `Action` type declaration above is an example of a "union" or "sum" type. Without going too far into what these are, it's worth noting that TypeScript actually has its own form of union type, so lets have a go at adding that to our Redux example:
 
 To be continued...
