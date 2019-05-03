@@ -19,17 +19,17 @@ I'm going to take an example reducer from the [Redux Todos Example](https://gith
 
 For clarity, I've extracted the code dealing with each case/action into its own function (`addTodo` and `toggleTodo`) just so that we can focus on the higher level reducer. The actual implementation of these functions isn't really important, but it should be clear what they do.
 
-```
+```javascript
 const todos = (state = [], action) => {
   switch (action.type) {
-    case 'ADD_TODO':
+    case "ADD_TODO":
       return addTodo(state, action.id, action.text);
-    case 'TOGGLE_TODO':
+    case "TOGGLE_TODO":
       return toggleTodo(state, action.id);
     default:
-      return state
+      return state;
   }
-}
+};
 ```
 
 Now I've noticed that when I first show Elm to people who've not seen an ML-based language before, their reaction is usually somewhere between disgust and horror. I'm not sure if it's the lack of punctuation that puts them off, but I'm hoping that by showing the direct equivalent in React first, and by tweaking some of the names in the Elm version to be more familiar to React/Redux devs\*, I can overcome this issue.
@@ -38,7 +38,7 @@ Now I've noticed that when I first show Elm to people who've not seen an ML-base
 
 With that in mind, here's the Elm equivalent of the reducer above.
 
-```
+```elm
 todos action state =
     case action of
         AddTodo id text ->
@@ -51,7 +51,7 @@ Hopefully it's fairly obvious that whilst it looks a little different, this code
 
 Now as I mentioned, Elm is a strongly typed language, and in order to carry on with this post, for now I'll need to show you the type definition for `action` (again with Elm's naming conventions replaced by more familiar Reduxy ones)
 
-```
+```elm
 type Action
     = AddTodo Int String
     | ToggleTodo Int
