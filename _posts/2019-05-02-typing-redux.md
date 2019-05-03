@@ -38,11 +38,7 @@ const todos = (state = [], action) => {
 };
 ```
 
-I've noticed that when I first show Elm to people who've not seen an ML-based language before, their reaction is usually somewhere between disgust and horror. I'm not sure if it's the lack of punctuation that puts them off, but I'm hoping that by showing the direct equivalent in React first, and by tweaking some of the names in the Elm version to be more familiar to React/Redux devs\*, I can overcome this issue.
-
-\* Elm conventionally uses `update`, `msg` and `model` rather than `reducer`, `action` and `state`.
-
-With that in mind, here's the Elm equivalent of the reducer above.
+...and here's the equivalent in Elm:
 
 ```elm
 todos action state =
@@ -53,7 +49,13 @@ todos action state =
             toggleTodo id state
 ```
 
-Hopefully it's fairly obvious that whilst it looks a little different, this code is essentially doing exactly the same thing as the React/Redux reducer.
+I've noticed that when I first show Elm to people who've not seen an ML-based language before, their reaction is usually somewhere between disgust and horror. I'm not sure if it's the lack of punctuation that puts them off, but I'm hoping that by showing the direct equivalent in React first, and by tweaking some of the names in the Elm version to be more familiar to React/Redux devs\*, I can overcome this issue.
+
+\* Elm conventionally uses `update`, `msg` and `model` rather than `reducer`, `action` and `state`.
+
+Hopefully it's fairly obvious that whilst it looks a little different, this code is essentially doing exactly the same thing as the React/Redux reducer above it.
+
+## Adding Types
 
 Of course, the purpose of this post is to look at typing, so here I'll add the type declaration for the action:
 
