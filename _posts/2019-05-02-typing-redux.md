@@ -5,7 +5,7 @@ tags: [functional-programming]
 bigimg: /img/bench-couple-date-6051.jpg
 ---
 
-From what I gather, a lot of people are now using TypeScript when building React apps, but I've noticed that generally people don't add types to their Redux actions and reducers.
+A lot of people are now using TypeScript when building React apps, but I've noticed that generally people don't add types to their Redux actions and reducers.
 
 I've done a bit of searching around this and there are definitely people doing it, but the results seem to end up looking quite complicated, and I can see why people give up on it!
 
@@ -15,7 +15,7 @@ This seems a shame because I know from [Elm](https://elm-lang.org/), that adding
 
 Meanwhile, over the last few years, as I've been delving more and more into the world of functional programming, I can't help noticing that whilst at first it feels completely different to object-oriented programming, most of the concepts in the one paradigm actually have parallells on the other. It's just that in some cases you have to look quite hard to see them!
 
-With that in mind, I can't help thinking that whilst Elm is a purely functional language, it should be possible to translate the way Elm uses types in its reducer funtions\* into the object-oriented language of TypeScript.
+With that in mind, I can't help thinking that whilst Elm is a purely functional language, it should be possible to translate the way Elm uses types in its update funtions (the equivalent of Redux reducers) into the more object-oriented language of TypeScript.
 
 ## The Experiment
 
@@ -65,11 +65,11 @@ type Action
 
 Hopefully it's fairly clear what's being stated. Essentially if something is an `Action`, then it must be either an `AddTodo` or a `ToggleTodo`, each of which carries some simple data which we've also given types for.
 
-Since Elm makes us give actions a type, its compiler can spot when we do something silly, describe to us exactly where and clearly what the problem is.
+Since Elm makes us give actions a type, its compiler can spot when we do something silly, and show us exactly what and where the issue is.
 
-For example, the classic mistake I always make in Redux is to add an action, dispatch it, then completely forget to add a case for it to the reducer. I'll then run the program, try to perform the action through the browser (which will do precisely nothing), and spend a few minutes scratching my head and trying out all the possible things I could have done wrong.
+To give an example, the classic mistake I always seem to make with Redux is to add an action, write the code to dispatch it, then completely forget to add a case for it to the reducer. I'll then run the program, try performing the action through the browser (which will do precisely nothing), then spend several minutes scratching my head and trying out all the possible things I could have done wrong before realizing what the actual issue is.
 
-In Elm, if I forget to add the new action to the case expression, it won't compile. It'll tell me exactly where to go in the code to fix the issue and it'll pretty much tell me what code I need to add to resolve it!
+In Elm, if I forget to add the new action to the case expression, it just won't compile. It'll tell me exactly where to go in the code to fix the issue and it'll pretty much tell me what code I need to add as well. This is a huge time-saver!
 
 ## Union types
 
