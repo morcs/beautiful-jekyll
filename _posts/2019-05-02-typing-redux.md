@@ -93,7 +93,7 @@ interface ToggleTodo {
 It's a bit more verbose than the Elm version, and feels a bit kludgy, but it does bring some of the type safety we want. The reducer now looks like this:
 
 ```typescript
-const todos = (state: Todo[] = [], action: Action): Todo[] => {
+const todos = (state: State = [], action: Action): State => {
   switch (action.type) {
     case "ADD_TODO":
       return addTodo(state, action.id, action.text);
