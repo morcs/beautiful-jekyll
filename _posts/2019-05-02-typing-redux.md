@@ -19,7 +19,7 @@ With that in mind, I can't help thinking that whilst Elm is a purely functional 
 
 ## The Experiment
 
-For this experiment, I'm going to take a reducer from the [Redux Todos Example](https://github.com/reduxjs/redux/tree/master/examples/todos), try implementing it in Elm, then try to recreate the Elm design in the Redux version by adding TypeScript.
+For this experiment, I'm going to take a reducer from the [Redux Todos Example](https://github.com/reduxjs/redux/tree/master/examples/todos), try implementing it in Elm, then try to recreate the Elm design (and the bonus of type safety) in the Redux version by adding TypeScript.
 
 For clarity, I've extracted the code dealing with each case/action into its own function (`addTodo` and `toggleTodo`) just so that we can focus on the higher level concepts. The actual implementation of these functions isn't really important, but it should be clear what they do.
 
@@ -73,6 +73,34 @@ In Elm, if I forget to add the new action to the case expression, it just won't 
 
 ## Union types
 
-The `Action` type declaration above is an example of a "union" or "sum" type. Without going too far into what these are, it's worth noting that TypeScript actually has its own form of union type, so lets have a go at adding that to our Redux example:
+The `Action` type declaration above is an example of a "union" or "sum" type. Without going too far into what these are, it's worth noting that TypeScript actually has its own form of union type, so lets have a go at adding that to our Redux example, by adding some TypeScript:
 
-To be continued...
+```typescript
+type Action = AddTodo | ToggleTodo;
+
+interface AddTodo {
+  type: "ADD_TODO";
+  id: number;
+  text: string;
+}
+
+interface ToggleTodo {
+  type: "TOGGLE_TODO";
+  id: number;
+}
+```
+
+It's a bit more verbose than the Elm version, and feels a bit kludgy, but it does bring some of the type safety we want. The reducer now looks like this:
+
+```typescript
+const todos = (state: Todo[] = [], action: Action): Todo[] => {
+  switch (action.type) {
+    case "ADD_TODO":
+      return addTodo(state, action.id, action.text);
+    case "TOGGLE_TODO":
+      return toggleTodo(state, action.id);
+    default:
+      return state;
+  }
+};
+```
