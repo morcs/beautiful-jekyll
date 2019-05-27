@@ -1,29 +1,31 @@
 ---
 layout: post
-title: Typing Redux
+title: Typing Redux Actions and Reducers
 tags: [functional-programming]
 bigimg: /img/bench-couple-date-6051.jpg
 ---
 
-A lot of people are now using TypeScript when building React apps, but I've noticed that generally people don't add types to their Redux actions and reducers.
+I recently worked on a React project where, like a lot of others it seems, we decided to use TypeScript rather than plain old JavaScript. Why? The usual reasons for wanting static typing. For me, I like having the compiler point out my silly mistakes immediately, rather than waiting to discover them myself (or worse, through bug reports from users) at runtime, then having to trace back and work out what on earth caused them.
 
-I've done a bit of searching around this and there are definitely people doing it, but the results seem to end up looking quite complicated, and I can see why people give up on it!
+One frustration I had though was how difficult it was to add types/type annotations for Redux actions and reducers.
 
-This seems a shame because I know from [Elm](https://elm-lang.org/), that adding static typing in this area tends to eliminate an awful lot of common bugs.
+This seems a shame because I know from playing with [Elm](https://elm-lang.org/), that having static types here tends to eliminate an awful lot of common bugs.
 
-## FP vs OOP?
+One example that comes to mind is adding a new action but forgetting to add a new case statement to the reducer. If you do the equivalent in Elm, your program won't compile, and it'll tell you exactly where to go and fix it.
 
-Meanwhile, over the last few years, as I've been delving more and more into the world of functional programming, I can't help noticing that whilst at first it feels completely different to object-oriented programming, most of the concepts in the one paradigm actually have parallells on the other. It's just that in some cases you have to look quite hard to see them!
+If you do this in Redux? Usually everything builds and runs fine, no exceptions are thrown. You run the app, click the button/perform the action and nothing happens. This behaviour could be the result of various different mistakes, so it often takes a lot of head scratching to track it down.
 
-With that in mind, I can't help thinking that whilst Elm is a purely functional language, it should be possible to translate the way Elm uses types in its update funtions (the equivalent of Redux reducers) into the more object-oriented language of TypeScript.
+It's certainly possible to add the type annotations using TypeScript, [the Redux documentation includes some examples](https://redux.js.org/recipes/usage-with-typescript), but this feels really...complicated! Especially when you look at the equivalent in Elm.
+
+I wonder if it's possible to simplify things by looking at how Elm does it, then trying to translate that to TypeScript instead.
 
 ## The Experiment
 
-For this experiment, I'm going to take a reducer from the [Redux Todos Example](https://github.com/reduxjs/redux/tree/master/examples/todos), try implementing it in Elm, then try to recreate the Elm design (and the bonus of type safety) in the Redux version by adding TypeScript.
+To this end, I'm going to take a reducer from the [Redux Todos Example](https://github.com/reduxjs/redux/tree/master/examples/todos). Then I'll try implementing the equivalent in Elm. Since Elm is strictly typed, I'll have to add types for all of the code. Then I'll go back to the Redux vesion, add TypeScript, and see if I can add types in a way that mimics what I ended up with in Elm.
 
-For clarity, I've extracted the code dealing with each case/action into its own function (`addTodo` and `toggleTodo`) just so that we can focus on the higher level concepts. The actual implementation of these functions isn't really important, but it should be clear what they do.
+With that in mind, here's the Redux version in plain JavaScript.
 
-With that in mind, here's the JavaScript version:
+_N.b. For clarity, I've extracted the code dealing with each case/action into its own function (`addTodo` and `toggleTodo`) just so that we can focus on the higher level concepts. The actual implementation of these functions isn't really important, it's the reducer code we care about._
 
 ```javascript
 const todos = (state = [], action) => {
@@ -38,38 +40,34 @@ const todos = (state = [], action) => {
 };
 ```
 
-...and here's the equivalent in Elm:
+Here's the equivalent in Elm:
 
 ```elm
 todos action state =
     case action of
-        AddTodo id text ->
+        AddTodo { id, text } ->
             addTodo id text state
-        ToggleTodo id ->
+        ToggleTodo { id } ->
             toggleTodo id state
 ```
 
-I've noticed that when I first show Elm to people who've not seen an ML-based language before, their reaction is usually somewhere between disgust and horror. Maybe it's the unfamiliar lack of punctuation, but I'm hoping that by showing it next to the React/JS equivalent, and by tweaking some of the names to be more familiar to React/Redux devs\*, I can overcome this issue. So whilst it looks a little different, this code is essentially doing exactly the same thing as the React/Redux example above it.
+N.b. I'm hoping that by breaking Elm's naming conventions, I've made this a bit more familiar to React/Redux devs\*. Hopefully by showing it this way though you can see how markedly similar Elm and Redux are.
 
-\* Elm conventionally uses `update`, `msg` and `model` rather than `reducer`, `action` and `state` respectively.
+\* In Elm you'd usually see `update`, `msg` and `model` rather than `reducer`, `action` and `state` respectively.
 
 ## Adding Types
 
-The purpose of this post is to look at typing, so I'll also show the type declaration behind the `action` parameter:
+The purpose of this post is to look at typing, so I'll also show the type declaration behind the `action` parameter in the Elm version:
 
 ```elm
 type Action
-    = AddTodo Int String
-    | ToggleTodo Int
+    = AddTodo { id: Int, text: String }
+    | ToggleTodo { id: Int }
 ```
 
-Nice and concise! Essentially this says that if something is an `Action`, then it must be either an `AddTodo` or a `ToggleTodo`, each of which carries some simple data which we've also given types for.
+_N.b. To readers familiar with Elm. I appreciate that usually you wouldn't bother with the record types and would just have e.g. `AddTodo Int String`. Whilst it's tempting to show how much more terse the language can be, I think (from experience!) people unfamiliar with ML-like languages can be initially put off by the unfamiliar terseness!_
 
-Since Elm makes us give actions a type, its compiler can spot when we do something silly, and show us exactly what and where the issue is.
-
-To give an example of how this helps, the classic mistake I always seem to make with Redux is to add an action, write the code to dispatch it, then completely forget to add a case for it to the reducer. I'll then run the program, try performing the action through the browser (which will do precisely nothing), then spend several minutes scratching my head and trying out all the possible things I could have done wrong before realizing what the actual issue is.
-
-In Elm, if I forget to add the new action to the case expression, it just won't compile. It'll tell me exactly where to go in the code to fix the issue and it'll pretty much tell me what code I need to add as well. This is a huge time-saver!
+Essentially this says that if something is an `Action`, then it must be either an `AddTodo` or a `ToggleTodo`, each of which carries some simple data, which we've also defined the types for.
 
 ## Union types
 
@@ -90,10 +88,10 @@ interface ToggleTodo {
 }
 ```
 
-It's a bit more verbose than the Elm version, and feels a bit kludgy, but it does bring some of the type safety we want. The reducer now looks like this:
+It's a bit more verbose than the Elm version, but it does bring some of the type safety we want. The reducer now looks like this:
 
 ```typescript
-const todos = (state: State = [], action: Action): State => {
+const todos = (state = [], action: Action) => {
   switch (action.type) {
     case "ADD_TODO":
       return addTodo(state, action.id, action.text);
@@ -104,3 +102,5 @@ const todos = (state: State = [], action: Action): State => {
   }
 };
 ```
+
+Almost exactly the same as the original! That's good I suppose, but is the compiler actually looking after us now? Well if I try and refer to `action.text` inside `case "TOGGLE_TODO"`, the compiler spots my mistake and reports _"Type error: Property 'text' does not exist on type 'ToggleTodo'."_. Excellent!
