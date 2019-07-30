@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Null - The Billion Dollar Mistake
-bigimg: /img/gearshift.jpeg
+bigimg: /img/mistake.jpg
 tags: [musings]
 ---
 
@@ -9,7 +9,7 @@ Tony Hoare invented `null`, and famously later called it his "billion dollar mis
 
 ## The problem will `null`
 
-Imagine you import a library containing the following function (N.b. I'm using TypeScript as I want to make the types explicit, but hopefully this should be clear enough to anyone that knows JavaScript):
+Imagine you import a library containing the following function (N.b. I'm using TypeScript for clarity here, hopefully little enough that it should be clear enough to anyone that knows JavaScript):
 
 ```
 function getFerrari(): Ferrari { ... }
