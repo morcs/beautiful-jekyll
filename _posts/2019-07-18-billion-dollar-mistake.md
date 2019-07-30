@@ -53,7 +53,7 @@ If I'm not thorough with my testing, I might not even hit this branch of code an
 
 The problem is that null is like a sort of evil gremlin. It can masquerade as any value in your code and pretend to be something it isn't, until someone tries to treat it how it was advertised, at which point the gremlin jumps out and causes your application to explode, leaving you having to work out where on earth the gremlin was introduced.
 
-## What if other stuff worked this way?
+## What if nullables were more like other things?
 
 So how should it work instead? Lets look at some other similar programming structures and how they behave.
 
@@ -65,7 +65,7 @@ function getFerraris(): Array<Ferrari> { ... }
 const myFerraris = getFerraris();
 ```
 
-Obviously you can't now call getKey on this, it won't even compile:
+Obviously you can't call getKey on this, it won't even compile:
 
 ```
 const key = myFerraris.getKey();
@@ -81,4 +81,18 @@ for(ferrari of myFerraris)
 }
 ```
 
-In the case where you don't actually have a Ferrari, i.e. `myFerraris` is an empty list, this code will return an empty list of keys, which I think you'll agree is preferable to a gremlin jumping out and exploding.
+N.b. You're probably wondering why I don't just use `map` for this, don't worry that's coming!
+
+In the case where you don't actually have a Ferrari, i.e. `myFerraris` is an empty list, this code will return an empty list of keys, which I think is preferable to a gremlin jumping out and exploding.
+
+Of course we could add some similar boilerplate code around the nullable example, to deal with the fact it could be null:
+
+```
+const maybeAFerrari = getFerrari();
+let key = null;
+if(maybeAFerrari) {
+    key = maybeAFerrari.getKey();
+}
+```
+
+TBC
