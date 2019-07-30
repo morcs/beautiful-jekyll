@@ -49,13 +49,21 @@ TypeError: Cannot read property 'getKey' of null
 
 It's a bit late now, but I've just found out that I don't have a Ferrari at all.
 
-If I'm not thorough with my testing, I might not even hit this branch of code and could easily end up putting it into production. Then I'd have to debug to work out what actually caused the error, which might involve tracing back through the code to find out where the null came from, which could be pretty time consuming. (Imagine how many times over this has been repeated and it's easy to imagine how this adds up to being a billion dollar mistake).
+If I'm not thorough with my testing, I might not even hit this branch of code and could easily end up putting it into production. Then I'd have to debug to work out what actually caused the error, which might involve tracing back through the code to find out where the null came from, which could be pretty time consuming.
 
-The problem is that null is like a sort of evil gremlin. It can masquerade as any value in your code and pretend to be something it isn't, until someone tries to treat it how it was advertised, at which point the gremlin jumps out and causes your application to explode, leaving you having to work out where on earth the gremlin was introduced.
+I think all developers have hit this type of error more times than they dare to imagine, and I think it's easy to see how this could add up to being a billion dollar mistake. Especially if you changed the example to something like:
+
+```
+const controlRod = myNuclearReactor.getControlRod();
+```
+
+The problem is that null is like a sort of evil gremlin. It can masquerade as any value in your code, pretending to be something benign. That is, until someone tries to treat it how it was advertised, at which point the previously hidden null gremlin has no choice but to jump out and make your application explode, leaving you having to work out where on earth the little blighter was introduced.
+
+Why do we accept this? Wouldn't it be better if the compiler could prevent us from doing it in the first place?
 
 ## What if nullables were more like other things?
 
-So how should it work instead? Lets look at some other similar programming structures and how they behave.
+So how do we fix this? What should we be doing instead? Lets look at some other similar programming structures and how they behave much better.
 
 Imagine instead of returning a Ferrari or null, the function we call returns an array of Ferraris:
 
@@ -71,7 +79,7 @@ Obviously you can't call getKey on this, it won't even compile:
 const key = myFerraris.getKey();
 ```
 
-Instead the compiler forces you to acknowledge that it's a collection, and use the relevant boilerplate code to allow you to operate on individual Ferraris. So something like this, which will give you an array of keys:
+Instead the compiler forces you to acknowledge that it's a collection, and use the relevant boilerplate code to allow you to get at the individual Ferraris. So something like this, which will give you an array of keys:
 
 ```
 let keys = [];
@@ -83,9 +91,9 @@ for(ferrari of myFerraris)
 
 N.b. You're probably wondering why I don't just use `map` for this, don't worry that's coming!
 
-In the case where you don't actually have a Ferrari, i.e. `myFerraris` is an empty list, this code will return an empty list of keys, which I think is preferable to a gremlin jumping out and exploding.
+This code can still represent the case where you don't actually have a Ferrari (i.e. `myFerraris` is an empty list). Except this time the code will return an empty list of keys, which I think is preferable to an undetectable gremlin.
 
-Of course we could add some similar boilerplate code around the nullable example, to deal with the fact it could be null:
+Of course we could add some similar boilerplate code around the nullable example, and acknowledge the fact that it could be null:
 
 ```
 const maybeAFerrari = getFerrari();
