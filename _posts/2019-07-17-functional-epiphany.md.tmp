@@ -1,0 +1,77 @@
+So Tom's been pestering me for a while now to do a talk for BrumJS. In the end he broke my resolve by using the gift of flattery, employing the "I think you'd do a really good talk" technique.
+
+Naturally my next thought was to try and leave the country so that I didn't have to do it, so I tried to find contracts abroad, but unfortunately I didn't try hard enough.
+
+So I had to go back to Plan A and to try to actually think of something to talk about. Something that I've learned about recently that might be of interest to others.
+
+Now I knew that was going to have to be something to do with functional programming, but I've been to talks where functional programming advocates try to sell it to a general audience, and I've seen how hard it is to sell in an industry where there's a million and one things people are telling you you should learn about, that look like they have a lot more practical usefulness.
+
+On top of that I'm not exactly the most gifted public speaker, so I wondered if I could channel the enthusiasm of Professor Brian Cox to try and explain how learning about functional programming has piqued my interest.
+
+Imagine a world, where there's no such thing as `null`, or `undefined`. No need to worry about catching exceptions, because there are no exceptions. No `this` keyword, with its confusing behaviour. Where no code relies on shared state which could be modified by other code at any moment. A language where the compiler finds your errors, rather than your users at runtime. These are the reasons why I love, functional programming.
+
+So the thing about playing with functional languages is you start to look at procedural languages in a new light and notice how full of foot guns they are (by foot guns I mean things to shoot yourself in the foot with). I think we kind of accept these things usually, because you don't know there's an alternative.
+
+One of those most effective of those foot guns is the concept of null/undefined. Null was invented by Tony Hoare for blah, and he famously later called it his "billion dollar mistake". So I thought I'd do my talk specifically about what's wrong with null and how functional programming deals with it differently.
+
+To show what makes null not ideal, I think its worth imagining what it would be like if the same pattern were applied to some other areas of common programming languages.
+
+One example is the concept of lists or arrays.
+
+Imagine we came up with a new convenient syntax for lists that allowed you to treat them as if they were a single item. For example, the following piece of code:
+
+```
+const passengers = [
+    ...,
+    { name: 'Jimmy", passportNumber: 5351534144 },
+    ...,
+]
+
+check(passengers.passportNumber);
+```
+
+So the idea is that you can treat a list as if it were a single item, and it'll assume you want the first item in the list.
+
+What should this code do?
+
+```
+const passengers = [];
+check(passengers.passportNumber);
+```
+
+Well obviously it should explode and blow your foot off, because what kind of idiot doesn't always consider the possibility that the list could be empty?
+
+If you look at nullables, lists and promises, they all need some sort of boilerplate code around them to ensure safety.
+
+```
+let passportNumbers
+for(passenger of passengers)
+    passportNumbers.push(passenger.passportNumber)
+
+promiseOfPassenger.then(passenger => check(passenger.passportNumber));
+
+if(maybeAPassenger)
+    check(maybeAPassenger.passportNumber)
+else
+    null;
+```
+
+- Need to go back to what's useful/attractive
+- Idea is not to get you to change language, but to see some patterns
+- Functions can return 3 different things, value, null, exception
+
+For the last couple of years I've been trying to learn about functional programming. It's one of those things that doesn't actually seem to be immediately useful, but over time seems to change the way you think and somehow make you feel like you're becoming a better developer.
+
+I decided I wanted to try and talk about one of the personal epiphanies I've experienced whilst learning about functional programming, where suddenly a whole bunch of concepts just clicks.
+
+Talks and posts about functional programming tend to fly over peoples' heads.
+
+Is it because the speaker/writer is trying to massage their ego?
+
+Is it because the speaker/writer has forgotten what it was like to be a beginner.
+
+What are the things that cause daily pain
+
+```
+
+```
