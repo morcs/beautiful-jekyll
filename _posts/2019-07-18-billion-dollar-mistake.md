@@ -66,48 +66,49 @@ Imagine instead of returning a Ferrari or null, the function we call returns an 
 ```
 function getFerraris(): Array<Ferrari> { ... }
 
-const myFerraris = getFerraris();
+const ferraris = getFerraris();
 ```
 
-Obviously you can't call getKey on this, it won't even compile:
+Obviously you can't call getKey directly on the result, that won't even compile:
 
 ```
-const key = myFerraris.getKey();
+const key = ferraris.getKey();
 ```
 
-Instead the compiler forces you to acknowledge that it's a collection, and use the relevant boilerplate code to allow you to get to the individual Ferraris. For example:
+Instead the compiler forces you to acknowledge that it's a collection, and use the special map function to call the `getKey` method on individual cars. For example:
 
 ```
-let keys = [];
-for(ferrari of myFerraris)
-{
-    keys.push(ferrari.getKey());
-}
+const keys = ferraris.map(ferrari => ferrari.getKey());
 ```
 
-N.b. You're probably wondering why I don't just use `map`, don't worry that's coming!
+This code can still represent the case where you don't actually have a Ferrari (i.e. `ferraris` is an empty list). Except this time instead of exploding, the code will return an empty list of keys. No gremlins in sight. The behaviour seems obvious, if you ask for all of the keys to my Ferraris, and I don't have any Ferraris, you get zero keys.
 
-This code can still represent the case where you don't actually have a Ferrari (i.e. `myFerraris` is an empty list). Except this time instead of exploding, the code will return an empty list of keys. No gremlins in sight. The behaviour seems obvious, if you ask for all of the keys to my Ferraris, and I don't have any Ferraris, you get zero keys.
-
-Similarly, if we look at promises:
+Similarly, if we look at promises, again we can't just try and get the key immediately from the value, the compiler won't let us:
 
 ```
-function promiseMeAFerrari(): Promise<Ferrari> { ... }
-
-const promiseOfFerrari = promiseMeAFerrari();
-```
-
-Again we can't just try and get the key from the promise, the compiler won't let us:
-
-```
+const promiseOfFerrari: Promise<Ferrari>;
 const key = promiseOfFerrari.getKey();
 ```
 
-As for the array, we need to use some promise specific boilderplate to allow us to get at the Ferrari itself:
+Just like for the array, we need to acknowledge that it's a promise use a special mapping function (this tiem called `then`) to allow us to use the `getKey` method.
 
 ```
 const promiseOfKey = promiseOfFerrari.then(ferrari => ferrari.getKey());
 ```
+
+Lets have a look at these two cases together:
+
+```
+const value: Array<Ferrari>;
+const result: Array<Key> = value.map(ferrari => ferrari.getKey());
+
+const value: Promise<Ferrari>;
+const result: Promise<Key> = value.then(ferrari => ferrari.getKey());
+```
+
+Arrays and promises seem like unrelated things, but these snippets of code are remarkably similar.
+
+In both cases we have a Something<Ferrari>, with a mapping function that can take the function we want to apply to the Ferrari to get a Key, and apply it to the Something<Ferrari> in order to obtain a Something<Key>.
 
 <!--So the billion dollar mistake was to allow `null` to be treated as a value of any type.
 
