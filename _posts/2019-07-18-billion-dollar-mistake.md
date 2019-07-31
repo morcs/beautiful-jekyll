@@ -7,7 +7,7 @@ tags: [musings]
 
 Tony Hoare invented `null`, and famously later called it his "billion dollar mistake". But what's wrong with it, and what could he have done instead?
 
-## The problem will `null`
+## The problem with `null`
 
 Imagine you import a library containing the following function (N.b. I've using TypeScript for the code examples here):
 
@@ -21,7 +21,7 @@ A rather nice function to have available. It's literally saying if you call it, 
 const myCar = getFerrari();
 ```
 
-I now have a variable called `myCar`, and TypeScript (through type inference) will confidently agree that it is indeed a `Ferrari`.
+I now have a variable called `myCar`, and if I use TypeScript's type inference to check, it will confidently agree that I do indeed have a `Ferrari`.
 
 Unfortunately though, the following is a perfectly valid implementation of `getFerrari`:
 
@@ -33,7 +33,7 @@ function getFerrari(): Ferrari {
 const myCar = getFerrari();
 ```
 
-TypeScript will have absolutely no issue with this, and the code will still compile perfectly without even a warning.
+TypeScript will have absolutely no issue with this, and the code will still compile without even a warning.
 
 Oblivious to this, I might later try to get the key to my Ferrari:
 
@@ -43,7 +43,7 @@ const key = myCar.getKey();
 
 Again, the compiler will have be fine with this. `myCar` is a `Ferrari`, and `Ferrari` has a `getKey` method on it, so we're all good.
 
-Of course, when I go to run the code, I'll end up getting this well known heart-sinking runtime error:
+Of course, when I go to run the code, I'll end up getting this familiar, heart-sinking error:
 
 ```
 TypeError: Cannot read property 'getKey' of null
@@ -51,9 +51,9 @@ TypeError: Cannot read property 'getKey' of null
 
 It's a bit late now, but I've just found out that I don't have a Ferrari at all.
 
-If I'm not thorough with my testing, I might not even hit this branch of code. I could easily end up putting it into production. Then I'd have to debug to work out what actually caused the error, which will involve tracing back through the code to find out where the null came from, which could be pretty laborious.
+If I'm not thorough with my testing, I might not even hit this branch of code. I could easily end up putting it into production, where my users would find out that the Ferraris don't exist. Then I'd have to debug to work out what actually caused the error, which will involve tracing back through the code to find out where the null came from.
 
-The problem is that null is like a sort of evil gremlin. It can hide from the compiler anywhere in your code, pretending to be anything it likes. That is, until someone tries to treat it as the advertised thing, at which point the previously hidden null gremlin will jump out and make your application explode, leaving you having to work out where on earth the little blighter was introduced.
+The problem is that null is like a sort of evil gremlin. It can hide from the compiler anywhere in your code, pretending to be anything it likes. Any value could actually be the null gremlin. That is, until someone tries to treat it as the thing it's advertising itself as, at which point the null gremlin will expose itself and make your application explode.
 
 Why do we accept this? Wouldn't it be better if the compiler could prevent us from doing it in the first place?
 
