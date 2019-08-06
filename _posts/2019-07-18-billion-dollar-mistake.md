@@ -5,23 +5,25 @@ bigimg: /img/mistake.jpg
 tags: [musings]
 ---
 
+_This post is unfinished, I'm trying to write something to go along with the talk I'm scheduled to be doing and figured if I just publish it as it is...I'm more likely to finish it!_
+
 Tony Hoare invented `null`, and famously later called it his "billion dollar mistake". But what's wrong with it, and what could he have done instead?
 
 ## The problem with `null`
 
-Imagine you import a library containing the following function (N.b. I've using TypeScript for the code examples here):
+Imagine you import a library containing the following function (N.b. I'm using TypeScript as the static typing will help to explain the idea.):
 
 ```
 function getFerrari(): Ferrari { ... }
 ```
 
-A rather nice function to have available. It's literally saying if you call it, you can have a Ferrari:
+What a function! It's literally saying if you call it, you can have a Ferrari:
 
 ```
 const myCar = getFerrari();
 ```
 
-I now have a variable called `myCar`, and if I use TypeScript's type inference to check, it will confidently agree that I do indeed have a `Ferrari`.
+I now have a variable called `myCar`, and I know it's `Ferrari`. TypeScript will confirm this if I check what type it has inferred.
 
 Unfortunately though, the following is a perfectly valid implementation of `getFerrari`:
 
